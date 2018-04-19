@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+body {
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif; }
+
+header {
+  max-width: 874px;
+  margin: 0 auto;
+  background-color: #dbdbdb; }
+  header .header-container {
+    display: flex;
+    align-items: center; }
+    header .header-container nav {
+      width: 83%;
+      display: flex;
+      align-items: center;
+      padding-left: 3rem;
+      background-color: white; }
+      header .header-container nav a {
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        padding: 0 0.5rem;
+        font-size: 12px;
+        border-right: 1px solid #dbdbdb;
+        white-space: nowrap;
+        cursor: pointer;
+        text-decoration: none; }
+        header .header-container nav a span {
+          color: #111178; }
+        header .header-container nav a i {
+          margin-right: 0.2rem;
+          font-size: 12px;
+          color: #dbdbdb; }
+        header .header-container nav a:first-child {
+          width: 180px;
+          padding: 0; }
+        header .header-container nav a:last-child {
+          border-right: none; }
+        header .header-container nav a:hover {
+          background-color: #ff7c23;
+          border-right: 1px solid #ff7c23; }
+          header .header-container nav a:hover span {
+            color: white; }
+    header .header-container .header-container__profile {
+      margin-left: auto;
+      padding-right: 3rem; }
+      header .header-container .header-container__profile i {
+        color: #111178; }
+
+.search {
+  max-width: 874px;
+  margin: 0 auto;
+  background-color: #111178; }
+  .search .search__container {
+    padding: 2rem 3rem 2rem 3rem; }
+    .search .search__container p {
+      color: white; }
+    .search .search__container a {
+      color: white; }
+    .search .search__container .search__container__forms {
+      display: flex; }
+
+main {
+  max-width: 874px;
+  margin: 0 auto; }
+  main section {
+    display: flex; }
+  main aside {
+    padding: 0 1rem 0 3rem;
+    background-color: #dbdbdb; }
+    main aside .sidebar {
+      border: 1px solid #111178; }
+    main aside .subtype {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 0.5rem;
+      background-color: #111178; }
+    main aside .subtype-search {
+      height: 10rem;
+      padding: 0 0.5rem;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      background-color: white; }
+      main aside .subtype-search input {
+        width: 95%;
+        margin: 0.5rem 0; }
+      main aside .subtype-search .subtype-search__list {
+        display: flex;
+        flex-direction: column; }
+        main aside .subtype-search .subtype-search__list p {
+          margin: 0.5rem 0; }
+  main .main-content {
+    width: 70%;
+    padding: 0 3rem 0 1rem; }
+    main .main-content .main-content__search-tags {
+      display: flex; }
+    main .main-content .main-content__sort {
+      display: flex;
+      justify-content: space-between; }
+    main .main-content .main-content__list {
+      display: flex;
+      flex-direction: column; }
+      main .main-content .main-content__list .main-content__list__item {
+        display: flex;
+        border: 1px solid #dbdbdb; }
+        main .main-content .main-content__list .main-content__list__item .content {
+          width: 70%;
+          display: flex; }
+          main .main-content .main-content__list .main-content__list__item .content .content__image {
+            width: 30%;
+            margin: auto; }
+          main .main-content .main-content__list .main-content__list__item .content .content__info {
+            width: 70%;
+            display: flex;
+            flex-direction: column; }
+            main .main-content .main-content__list .main-content__list__item .content .content__info .content__info__year-and-size {
+              display: flex; }
+              main .main-content .main-content__list .main-content__list__item .content .content__info .content__info__year-and-size p:first-child {
+                margin-right: 5%; }
+        main .main-content .main-content__list .main-content__list__item .tags {
+          width: 30%;
+          background-color: #dbdbdb; }
+          main .main-content .main-content__list .main-content__list__item .tags div {
+            display: flex;
+            flex-direction: column;
+            margin: 1rem 0 0 0.5rem; }
+          main .main-content .main-content__list .main-content__list__item .tags .tags__upgrade {
+            flex-direction: row; }
+            main .main-content .main-content__list .main-content__list__item .tags .tags__upgrade a:first-child {
+              margin-right: 5%; }
