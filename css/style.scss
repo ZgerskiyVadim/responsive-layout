@@ -5,7 +5,7 @@ body {
   font-family: $font;
 }
 
-header {
+.header {
   max-width: $max-width;
   margin: 0 auto;
   background-color: $background-grey;
@@ -19,16 +19,17 @@ header {
       padding-left: $padding-sections;
       background-color: white;
       a {
-        height: 3rem;
+        height: 4.7em;
         display: flex;
         align-items: center;
-        padding: 0 0.5rem;
-        font-size: 12px;
+        padding: 0 0.8rem;
+        font-size: 10px;
         border-right: 1px solid $background-grey;
         white-space: nowrap;
         cursor: pointer;
         text-decoration: none;
         span {
+          font-weight: 700;
           color: $background-blue;
         }
         i {
@@ -37,8 +38,9 @@ header {
           color: $background-grey;
         }
         &:first-child {
-          width: 175px;
+          width: 170px;
           padding: 0;
+          background-color: lightgrey;
           span {
             margin: 0 auto;
           }
@@ -66,6 +68,7 @@ header {
       margin-left: auto;
       padding-right: $padding-sections;
       i {
+        font-size: 20px;
         color: $background-blue
       }
     }
@@ -76,21 +79,21 @@ header {
 main {
   max-width: $max-width;
   margin: 0 auto;
-  .main {
-    display: flex;
-  }
   .search {
     max-width: $max-width;
-    padding: 1.5em $padding-sections 1.5rem $padding-sections;
+    padding: 1.5em $padding-sections 1.3rem $padding-sections;
     margin: 0 auto;
     background-color: $background-blue;
     color: white;
     .search__container {
       h3 {
         margin: 0.5rem 0;
+        font-size: 21px;
+        font-weight: 400;
       }
       p {
         margin: 0.5rem 0;
+        font-size: 13px;
       }
       span {
         font-weight: 700;
@@ -103,7 +106,7 @@ main {
         margin-top: 1.2em;
         .form-control {
           width: 20%;
-          margin-right: 5%;
+          margin-right: 2.7em;
           &:last-child {
             width: 25%;
             margin-right: 0;
@@ -115,122 +118,218 @@ main {
             width: 100%;
             height: 29px;
             background-color: #0fbc20;
+            color: white;
+            font-size: 10px;
             border: none;
             cursor: pointer;
+            outline: none;
           }
           label {
+            font-size: 10px;
             white-space: nowrap;
           }
         }
       }
     }
   }
-  .sidebar {
-    max-width: 17%;
-    padding: 1.5em 1.5em 0 $padding-sections;
-    background-color: $background-grey;
-    h5 {
-      margin: 0;
-      color: $background-blue;
-    }
-    .sidebar__container {
-      margin-top: 1em;
-      border: 1px solid $background-blue;
-    }
-    .subtype {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0.2em;
-      background-color: $background-blue;
-      h6 {
+  .main {
+    display: flex;
+    .sidebar {
+      max-width: 17%;
+      padding: 1.5em 1.5em 0 $padding-sections;
+      background-color: $background-grey;
+      h5 {
         margin: 0;
-        font-size: 8px;
-        color: white;
+        color: $background-blue;
       }
-      a {
-        font-size: 8px;
-        color: white;
+      .sidebar__container {
+        width: 9.3em;
+        margin-top: 0.9em;
+        border: 1px solid $background-blue;
       }
-    }
-    .subtype-search {
-      height: 10rem;
-      padding: 0 0.5rem;
-      overflow-y: scroll;
-      overflow-x: hidden;
-      background-color: white;
-      input {
-        width: 100%;
-        margin-top: 0.6em;
-      }
-      .subtype-search__list {
+      .subtype {
         display: flex;
-        flex-direction: column;
-        p {
-          margin: 0.5em 0;
-          font-size: 10px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.3em;
+        background-color: $background-blue;
+        h6 {
+          margin: 0;
+          font-size: 8px;
+          color: white;
+        }
+        a {
+          font-size: 8px;
+          color: white;
+        }
+      }
+      .subtype-search {
+        height: 10rem;
+        padding: 0 0.5rem;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        background-color: white;
+        input {
+          width: 100%;
+          padding: 0.3em 0;
+          margin-top: 0.7em;
+          font-size: 9px;
+        }
+        .subtype-search__list {
+          display: flex;
+          flex-direction: column;
+          div {
+            margin-top: 0.8em;
+            font-size: 10px;
+            &:first-child {
+              margin-top: 0.6em;
+            }
+          }
         }
       }
     }
-  }
-  .main-content {
-    width: 100%;
-    .main-content__search-tags {
-      display: flex;
-      padding: 0 3.3em 0 1em;
-      border-bottom: 1px solid $background-grey;
-    }
-    .sorted-items {
-      padding-left: 1em;
-      .sorted-items__sorted-by {
+    .main-content {
+      width: 100%;
+      .main-content__search-tags {
         display: flex;
-        justify-content: space-between;
+        align-items: center;
+        padding: 1em $padding-sections 1em 1.5em;
+        border-bottom: 1px solid $background-grey;
+        a {
+          margin-right: 1em;
+          color: $background-blue;
+          font-size: 10px;
+          cursor: pointer;
+        }
+        button {
+          height: 32px;
+          padding: 0 1em;
+          margin-right: 1em;
+          font-size: 10px;
+          background-color: $background-orange;
+          color: $background-grey;
+          border: none;
+          cursor: pointer;
+          outline: none;
+          i {
+            margin-right: 0.5em;
+            font-size: 8px;
+          }
+          &:last-child {
+            margin-right: 0;
+          }
+        }
       }
-      .sorted-items__list {
-        display: flex;
-        flex-direction: column;
-        .sorted-items__list__item {
+      .sorted-items {
+        padding: 0 $padding-sections 0 1.5em;
+        margin-top: 1.1em;
+        .sorted-items__sorted-by {
           display: flex;
-          border: 1px solid $background-grey;
-          .content {
-            width: 70%;
-            display: flex;
-            .content__image {
-              width: 30%;
-              margin: auto;
+          justify-content: space-between;
+          select {
+            width: 6.5em;
+            height: 100%;
+            padding: 0.1em 0;
+            background-color: white;
+            color: gray;
+            &:focus {
+              color: black;
             }
-            .content__info {
-              width: 70%;
+          }
+        }
+        .sorted-items__list {
+          display: flex;
+          flex-direction: column;
+          margin-top: 1em;
+          .sorted-items__list__item {
+            display: flex;
+            margin-top: 1.1em;
+            font-size: 10px;
+            border: 1px solid lightgrey;
+            &:first-child {
+              margin-top: 0;
+            }
+            .content {
+              width: 85%;
               display: flex;
-              flex-direction: column;
-              .content__info__sections {
+              padding: 2em;
+              .content__image {
+                width: 30%;
+                height: 100%;
+                margin: auto;
+                border: 1px solid lightgrey;
               }
-              .content__info__year-and-size {
+              .content__info {
+                width: 70%;
                 display: flex;
-                p:first-child {
+                flex-direction: column;
+                margin: 0.8em 1.6em 0.8em 1.6em;
+                color: $background-blue;
+                .content__info__sections {
+                  display: flex;
+                  align-items: center;
+                  a {
+                    font-size: 9px;
+                    color: $background-blue;
+                  }
+                  i {
+                    font-size: 6px;
+                    margin: 0 1em;
+                  }
+                }
+                h2 {
+                  font-size: 17px;
+                  margin: 0.7em 0 0;
+                }
+                h4 {
+                  margin: 0.2em 0 0.8em;
+                }
+                footer {
+                  display: flex;
+                  div {
+                    margin: 0.5em 0;
+                  }
+                  div:first-child {
+                    margin-right: 15%;
+                  }
+                }
+              }
+            }
+            .tags {
+              width: 15%;
+              padding: 1.5em 2em 1.5em 1.1em;
+              background-color: $background-grey;
+              border-left: 1px solid lightgrey;
+              div {
+                display: flex;
+                flex-direction: column;
+                margin-top: 0.8em;
+                &:first-child {
+                  margin-top: 0;
+                }
+                a {
+                  color: $background-blue;
+                }
+              }
+              .tags__upgrade {
+                flex-direction: row;
+                a:first-child {
                   margin-right: 5%;
+                }
+                button {
+                  margin: 0 0.3em;
+                  font-size: 7px;
+                  background-color: $background-blue;
+                  color: white;
+                  border: none;
+                  cursor: pointer;
+                  outline: none;
                 }
               }
             }
           }
-          .tags {
-            width: 30%;
-            background-color: $background-grey;
-            div {
-              display: flex;
-              flex-direction: column;
-              margin: 1rem 0 0 0.5rem;
-            }
-            .tags__upgrade {
-              flex-direction: row;
-              a:first-child {
-                margin-right: 5%;
-              }
-            }
-          }
         }
       }
     }
-
   }
 }

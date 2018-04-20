@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header>
+<header class="header">
     <div class="header-container">
         <nav>
             <a href="">
@@ -96,32 +96,36 @@
                     <a href="">Clear</a>
                 </div>
                 <div class="subtype-search">
-                    <input type="text">
+                    <input type="text" placeholder="Search">
                     <div class="subtype-search__list">
-                        <p>
-                            SUBTYPE(23)
-                        </p>
-                        <p>
-                            SUBTYPE(23)
-                        </p>
-                        <p>
-                            SUBTYPE(23)
-                        </p>
-                        <p>
-                            SUBTYPE(23)
-                        </p>
-                        <p>
-                            SUBTYPE(23)
-                        </p>
-                        <p>
-                            SUBTYPE(23)
-                        </p>
-                        <p>
-                            SUBTYPE(23)
-                        </p>
-                        <p>
-                            SUBTYPE(23)
-                        </p>
+                        <div>
+                            <i class="fa fa-square-o"></i>
+                            <span>SUBTYPE(23)</span>
+                        </div>
+                        <div>
+                            <i class="fa fa-square-o"></i>
+                            <span>SUBTYPE(23)</span>
+                        </div>
+                        <div>
+                            <i class="fa fa-square-o"></i>
+                            <span>SUBTYPE(23)</span>
+                        </div>
+                        <div>
+                            <i class="fa fa-square-o"></i>
+                            <span>SUBTYPE(23)</span>
+                        </div>
+                        <div>
+                            <i class="fa fa-square-o"></i>
+                            <span>SUBTYPE(23)</span>
+                        </div>
+                        <div>
+                            <i class="fa fa-square-o"></i>
+                            <span>SUBTYPE(23)</span>
+                        </div>
+                        <div>
+                            <i class="fa fa-square-o"></i>
+                            <span>SUBTYPE(23)</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -129,41 +133,50 @@
 
         <div class="main-content">
             <section class="main-content__search-tags">
-                Clear All
-                <button>Excavators</button>
-                <button>Excavators attachments</button>
-                <button>Values & Market Data </button>
-                <button>Specs</button>
+                <a href="">Clear All</a>
+                <button><i class="fa fa-close"></i>Excavators</button>
+                <button><i class="fa fa-close"></i>Excavators attachments</button>
+                <button><i class="fa fa-close"></i>Values & Market Data</button>
+                <button><i class="fa fa-close"></i>Specs</button>
             </section>
             <section class="sorted-items">
-                <div class="sorted-items__sorted-by">
+                <section class="sorted-items__sorted-by">
                     <span>5,712 results</span>
-                    <input type="text" placeholder="Sort by...">
-                </div>
-                <div class="sorted-items__list">
-                    <div class="sorted-items__list__item">
-                        <div class="content">
+                    <form action="">
+                        <select required>
+                            <option value="" disabled selected hidden><h6>Sort by...</h6></option>
+                            <option value="0">Excavators</option>
+                            <option value="1">Excavators attachments</option>
+                            <option value="2">Values & Market Data</option>
+                            <option value="3">Specs</option>
+                        </select>
+                    </form>
+                </section>
+                <section class="sorted-items__list">
+                    <article class="sorted-items__list__item">
+                        <section class="content">
                             <span class="content__image">not found</span>
                             <div class="content__info">
-                                <div class="content__info__sections">
+                                <header class="content__info__sections">
                                     <a href="">Aerial Lifts</a>
+                                    <i class="fa fa-angle-right"></i>
                                     <a href="">l.C. Self Propelled Telescopic Boom Aerial Lifts</a>
-                                </div>
-                                <p>SP460CJ</p>
-                                <p>AICHI</p>
-                                <div class="content__info__year-and-size">
-                                    <p>
-                                        <span>Year:</span>
-                                        <span>2003 - 2012</span>
-                                    </p>
-                                    <p>
-                                        <span>Year:</span>
-                                        <span>2003 - 2012</span>
-                                    </p>
-                                </div>
+                                </header>
+                                <h2>SP460CJ</h2>
+                                <h4>AICHI</h4>
+                                <footer>
+                                    <div>
+                                        <span>Year: </span>
+                                        <time>2003 - 2012</time>
+                                    </div>
+                                    <div>
+                                        <span>Size/Variance: </span>
+                                        <span>41 - 50 ft.</span>
+                                    </div>
+                                </footer>
                             </div>
-                        </div>
-                        <div class="tags">
+                        </section>
+                        <aside class="tags">
                             <div>
                                 <a href="">
                                     Gosts/Rental Rate
@@ -197,31 +210,32 @@
                                     Specs
                                 </a>
                             </div>
-                        </div>
-                    </div>
-                    <div class="sorted-items__list__item">
-                        <div class="content">
+                        </aside>
+                    </article>
+                    <article class="sorted-items__list__item">
+                        <section class="content">
                             <span class="content__image">not found</span>
                             <div class="content__info">
-                                <div class="content__info__sections">
+                                <header class="content__info__sections">
                                     <a href="">Aerial Lifts</a>
+                                    <i class="fa fa-angle-right"></i>
                                     <a href="">l.C. Self Propelled Telescopic Boom Aerial Lifts</a>
-                                </div>
-                                <p>SP460CJ</p>
-                                <p>AICHI</p>
-                                <div class="content__info__year-and-size">
-                                    <p>
-                                        <span>Year:</span>
-                                        <span>2003 - 2012</span>
-                                    </p>
-                                    <p>
-                                        <span>Year:</span>
-                                        <span>2003 - 2012</span>
-                                    </p>
-                                </div>
+                                </header>
+                                <h2>SP460CJ</h2>
+                                <h4>AICHI</h4>
+                                <footer>
+                                    <div>
+                                        <span>Year: </span>
+                                        <time>2003 - 2012</time>
+                                    </div>
+                                    <div>
+                                        <span>Size/Variance: </span>
+                                        <span>41 - 50 ft.</span>
+                                    </div>
+                                </footer>
                             </div>
-                        </div>
-                        <div class="tags">
+                        </section>
+                        <aside class="tags">
                             <div>
                                 <a href="">
                                     Gosts/Rental Rate
@@ -255,31 +269,32 @@
                                     Specs
                                 </a>
                             </div>
-                        </div>
-                    </div>
-                    <div class="sorted-items__list__item">
-                        <div class="content">
+                        </aside>
+                    </article>
+                    <article class="sorted-items__list__item">
+                        <section class="content">
                             <span class="content__image">not found</span>
                             <div class="content__info">
-                                <div class="content__info__sections">
+                                <header class="content__info__sections">
                                     <a href="">Aerial Lifts</a>
+                                    <i class="fa fa-angle-right"></i>
                                     <a href="">l.C. Self Propelled Telescopic Boom Aerial Lifts</a>
-                                </div>
-                                <p>SP460CJ</p>
-                                <p>AICHI</p>
-                                <div class="content__info__year-and-size">
-                                    <p>
-                                        <span>Year:</span>
-                                        <span>2003 - 2012</span>
-                                    </p>
-                                    <p>
-                                        <span>Year:</span>
-                                        <span>2003 - 2012</span>
-                                    </p>
-                                </div>
+                                </header>
+                                <h2>SP460CJ</h2>
+                                <h4>AICHI</h4>
+                                <footer>
+                                    <div>
+                                        <span>Year: </span>
+                                        <time>2003 - 2012</time>
+                                    </div>
+                                    <div>
+                                        <span>Size/Variance: </span>
+                                        <span>41 - 50 ft.</span>
+                                    </div>
+                                </footer>
                             </div>
-                        </div>
-                        <div class="tags">
+                        </section>
+                        <aside class="tags">
                             <div>
                                 <a href="">
                                     Gosts/Rental Rate
@@ -313,9 +328,68 @@
                                     Specs
                                 </a>
                             </div>
-                        </div>
-                    </div>
-                </div>
+                        </aside>
+                    </article>
+                    <article class="sorted-items__list__item">
+                        <section class="content">
+                            <span class="content__image">not found</span>
+                            <div class="content__info">
+                                <header class="content__info__sections">
+                                    <a href="">Aerial Lifts</a>
+                                    <i class="fa fa-angle-right"></i>
+                                    <a href="">l.C. Self Propelled Telescopic Boom Aerial Lifts</a>
+                                </header>
+                                <h2>SP460CJ</h2>
+                                <h4>AICHI</h4>
+                                <footer>
+                                    <div>
+                                        <span>Year: </span>
+                                        <time>2003 - 2012</time>
+                                    </div>
+                                    <div>
+                                        <span>Size/Variance: </span>
+                                        <span>41 - 50 ft.</span>
+                                    </div>
+                                </footer>
+                            </div>
+                        </section>
+                        <aside class="tags">
+                            <div>
+                                <a href="">
+                                    Gosts/Rental Rate
+                                </a>
+                                <a href="">
+                                    Blue Book
+                                </a>
+                            </div>
+
+                            <div>
+                                <a href="">
+                                    Values and Market
+                                </a>
+                                <a href="">
+                                    Data
+                                </a>
+                            </div>
+                            <div class="tags__upgrade">
+                                <a href="">
+                                    Verification
+                                </a>
+                                <button>Upgrade</button>
+                            </div>
+                            <div>
+                                <a href="">
+                                    Retail Rental
+                                </a>
+                            </div>
+                            <div>
+                                <a href="">
+                                    Specs
+                                </a>
+                            </div>
+                        </aside>
+                    </article>
+                </se>
             </section>
         </div>
 
