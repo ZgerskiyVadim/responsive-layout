@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
 body {
   margin: 0;
@@ -32,7 +33,7 @@ body {
 
 .header .header-container nav a span {
   font-weight: 700;
-  color: #111178; }
+  color: #17394a; }
 
 .header .header-container nav a i {
   margin-right: 0.2rem;
@@ -52,7 +53,7 @@ body {
   border-right: 1px solid #eeeeee; }
 
 .header .header-container nav a:first-child:hover span {
-  color: #111178; }
+  color: #17394a; }
 
 .header .header-container nav a:last-child {
   border-right: none; }
@@ -70,7 +71,7 @@ body {
 
 .header .header-container .header-container__profile i {
   font-size: 20px;
-  color: #111178; }
+  color: #17394a; }
 
 main {
   max-width: 874px;
@@ -80,7 +81,7 @@ main .search {
   max-width: 874px;
   padding: 1.5em 3.4em 1.3rem 3.4em;
   margin: 0 auto;
-  background-color: #111178;
+  background-color: #17394a;
   color: white; }
 
 main .search .search__container h3 {
@@ -92,9 +93,6 @@ main .search .search__container p {
   margin: 0.5rem 0;
   font-size: 13px; }
 
-main .search .search__container span {
-  font-weight: 700; }
-
 main .search .search__container a {
   color: white; }
 
@@ -103,15 +101,18 @@ main .search .search__container .search__container__form {
   margin-top: 1.2em; }
 
 main .search .search__container .search__container__form .form-control {
-  width: 20%;
-  margin-right: 2.7em; }
+  width: 24%;
+  margin-right: 1.5em; }
 
 main .search .search__container .search__container__form .form-control:last-child {
   width: 25%;
   margin-right: 0; }
 
 main .search .search__container .search__container__form .form-control input {
-  height: 23px; }
+  width: 97%;
+  height: 25px;
+  padding-left: 0.5em;
+  border: 1px solid rgba(23, 57, 74, 0.62); }
 
 main .search .search__container .search__container__form .form-control button {
   width: 100%;
@@ -132,24 +133,25 @@ main .main {
 
 main .main .sidebar {
   max-width: 17%;
-  padding: 1.5em 1.5em 0 3.4em;
+  padding: 1.4em 1.5em 0 3.4em;
   background-color: #eeeeee; }
 
 main .main .sidebar h5 {
   margin: 0;
-  color: #111178; }
+  font-weight: 500;
+  color: #17394a; }
 
 main .main .sidebar .sidebar__container {
   width: 9.3em;
-  margin-top: 0.9em;
-  border: 1px solid #111178; }
+  margin-top: 1em;
+  border: 1px solid #17394a; }
 
 main .main .sidebar .subtype {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.3em;
-  background-color: #111178; }
+  padding: 0.2em 0.3em 0.3em 0.3em;
+  background-color: #17394a; }
 
 main .main .sidebar .subtype h6 {
   margin: 0;
@@ -167,11 +169,16 @@ main .main .sidebar .subtype-search {
   overflow-x: hidden;
   background-color: white; }
 
+main .main .sidebar .subtype-search::-webkit-scrollbar-button {
+  color: #17394a;
+  background-color: #17394a; }
+
 main .main .sidebar .subtype-search input {
-  width: 100%;
-  padding: 0.3em 0;
+  width: 99%;
+  padding: 0.5em 0 0.3em 0.5em;
   margin-top: 0.7em;
-  font-size: 9px; }
+  font-size: 9px;
+  border: 1px solid rgba(23, 57, 74, 0.62); }
 
 main .main .sidebar .subtype-search .subtype-search__list {
   display: flex;
@@ -195,7 +202,7 @@ main .main .main-content .main-content__search-tags {
 
 main .main .main-content .main-content__search-tags a {
   margin-right: 1em;
-  color: #111178;
+  color: #17394a;
   font-size: 10px;
   cursor: pointer; }
 
@@ -225,15 +232,29 @@ main .main .main-content .sorted-items .sorted-items__sorted-by {
   display: flex;
   justify-content: space-between; }
 
-main .main .main-content .sorted-items .sorted-items__sorted-by select {
-  width: 6.5em;
-  height: 100%;
-  padding: 0.1em 0;
-  background-color: white;
-  color: gray; }
+main .main .main-content .sorted-items .sorted-items__sorted-by div {
+  position: relative; }
 
-main .main .main-content .sorted-items .sorted-items__sorted-by select:focus {
-  color: black; }
+main .main .main-content .sorted-items .sorted-items__sorted-by div select {
+  display: block;
+  width: 9em;
+  height: 23px;
+  padding-left: 0.5em;
+  font-size: 10px;
+  color: grey;
+  border: 1px solid rgba(23, 57, 74, 0.62);
+  background-color: white; }
+
+main .main .main-content .sorted-items .sorted-items__sorted-by div:after {
+  content: '▼';
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  height: 13px;
+  padding: 0.5em;
+  font-size: 8px;
+  background-color: #eeeeee;
+  pointer-events: none; }
 
 main .main .main-content .sorted-items .sorted-items__list {
   display: flex;
@@ -265,7 +286,7 @@ main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__
   display: flex;
   flex-direction: column;
   margin: 0.8em 1.6em 0.8em 1.6em;
-  color: #111178; }
+  color: #17394a; }
 
 main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__item .content .content__info .content__info__sections {
   display: flex;
@@ -273,7 +294,7 @@ main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__
 
 main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__item .content .content__info .content__info__sections a {
   font-size: 9px;
-  color: #111178; }
+  color: #17394a; }
 
 main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__item .content .content__info .content__info__sections i {
   font-size: 6px;
@@ -310,18 +331,18 @@ main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__
   margin-top: 0; }
 
 main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__item .tags div a {
-  color: #111178; }
+  color: #17394a; }
 
 main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__item .tags .tags__upgrade {
-  flex-direction: row; }
-
-main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__item .tags .tags__upgrade a:first-child {
-  margin-right: 5%; }
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end; }
 
 main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__item .tags .tags__upgrade button {
+  padding: 0.3em 0.3em;
   margin: 0 0.3em;
   font-size: 7px;
-  background-color: #111178;
+  background-color: #17394a;
   color: white;
   border: none;
   cursor: pointer;
