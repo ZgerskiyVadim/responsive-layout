@@ -86,14 +86,22 @@ main .search {
 
 main .search .search__container h3 {
   margin: 0.5rem 0;
-  font-size: 21px;
+  font-size: 1.3em;
   font-weight: 400; }
 
-main .search .search__container p {
-  margin: 0.5rem 0;
-  font-size: 13px; }
+main .search .search__container .search__container__description {
+  display: flex;
+  align-items: baseline;
+  margin: 0.6rem 0 0.5rem 0;
+  font-size: 0.8em; }
 
-main .search .search__container a {
+main .search .search__container .search__container__description h6 {
+  margin: 0;
+  font-size: 1em;
+  font-weight: 400; }
+
+main .search .search__container .search__container__description a {
+  margin-left: 0.5em;
   color: white; }
 
 main .search .search__container .search__container__form {
@@ -194,22 +202,22 @@ main .main .sidebar .subtype-search .subtype-search__list div:first-child {
 main .main .main-content {
   width: 100%; }
 
-main .main .main-content .main-content__search-tags {
+main .main .main-content .search-tags {
   display: flex;
   align-items: center;
   padding: 1em 3.4em 1em 1.5em;
   border-bottom: 1px solid #eeeeee; }
 
-main .main .main-content .main-content__search-tags a {
+main .main .main-content .search-tags a {
   margin-right: 1em;
   color: #17394a;
   font-size: 10px;
   cursor: pointer; }
 
-main .main .main-content .main-content__search-tags button {
+main .main .main-content .search-tags button {
   height: 32px;
   padding: 0 1em;
-  margin-right: 1em;
+  margin-right: 0.8em;
   font-size: 10px;
   background-color: #ff7c23;
   color: #eeeeee;
@@ -217,11 +225,11 @@ main .main .main-content .main-content__search-tags button {
   cursor: pointer;
   outline: none; }
 
-main .main .main-content .main-content__search-tags button i {
+main .main .main-content .search-tags button i {
   margin-right: 0.5em;
   font-size: 8px; }
 
-main .main .main-content .main-content__search-tags button:last-child {
+main .main .main-content .search-tags button:last-child {
   margin-right: 0; }
 
 main .main .main-content .sorted-items {
