@@ -44,7 +44,7 @@ body {
 
 .header .header-container nav a:first-child {
   width: 15em;
-  padding: 0; }
+  padding: 0 1.5em 0 0; }
 
 .header .header-container nav a:first-child img {
   width: 100%; }
@@ -64,18 +64,16 @@ body {
   color: white; }
 
 .header .header-container .header-container__profile {
-  margin: 0 3.4em 0 auto;
-  border: 1px solid rgba(23, 57, 74, 0.62); }
-
-.header .header-container .header-container__profile a {
   display: flex;
+  padding: 1.1em;
+  margin: 0 2.4em 0 auto;
   text-decoration: none; }
 
-.header .header-container .header-container__profile a i {
+.header .header-container .header-container__profile i {
   font-size: 1.5em;
   color: #17394a; }
 
-.header .header-container .header-container__profile a i:hover {
+.header .header-container .header-container__profile:hover i {
   color: rgba(23, 57, 74, 0.62); }
 
 main {

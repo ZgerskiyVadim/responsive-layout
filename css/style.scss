@@ -40,7 +40,7 @@ body {
         }
         &:first-child {
           width: 15em;
-          padding: 0;
+          padding: 0 1.5em 0 0;
           img {
             width: 100%;
           }
@@ -62,17 +62,17 @@ body {
       }
     }
     .header-container__profile {
-      margin: 0 $padding-sections 0 auto;
-      border: 1px solid $background-light_blue;
-      a {
-        display: flex;
-        text-decoration: none;
+      display: flex;
+      padding: 1.1em;
+      margin: 0 $padding-sections - 1em 0 auto;
+      text-decoration: none;
+      i {
+        font-size: 1.5em;
+        color: $background-blue;
+      }
+      &:hover {
         i {
-          font-size: 1.5em;
-          color: $background-blue;
-          &:hover {
-            color: $background-light_blue;
-          }
+          color: $background-light_blue;
         }
       }
     }
