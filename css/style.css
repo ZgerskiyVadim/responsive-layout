@@ -138,7 +138,9 @@ main .search .search__container .search__container__form .form-control label {
   white-space: nowrap; }
 
 main .main {
-  display: flex; }
+  display: flex;
+  max-width: 874px;
+  margin: 0 auto; }
 
 main .main .sidebar {
   max-width: 17%;
