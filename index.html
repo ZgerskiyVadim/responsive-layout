@@ -9,388 +9,389 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-<header class="header">
-    <div class="header-container">
-        <nav>
-            <a href="">
-                <span>Equipment</span>
-            </a>
-            <a href="">
-                <i class="fa fa-search"></i>
-                <span>Search</span>
-            </a>
-            <a href="">
-                <i class="fa fa-cloud-upload"></i>
-                <span>Upload</span>
-            </a>
-            <a href="">
-                <i class="fa fa-ticket"></i>
-                <span>Saved Models</span>
-            </a>
-            <a href="">
-                <i class="fa fa-files-o"></i>
-                <span>Groups</span>
-            </a>
-            <a href="">
-                <i class="fa fa-bar-chart"></i>
-                <span>Market Activity</span>
-            </a>
-            <a href="">
-                <i class="material-icons">help_outline</i>
-                <span>Help</span>
-            </a>
-        </nav>
-        <a class="header-container__profile" href=""><i class="material-icons">person</i></a>
-    </div>
-</header>
-
-<main>
-    <section class="search">
-        <div class="search__container">
-            <h3>
-                Search by Manufacturer, Model, or Serial Number
-            </h3>
-            <div class="search__container__description">
-                <h6>
-                    You`re search for models that have both
-                    <b>Values & Market Data</b> and <b>Specs</b>
-                </h6>
-                <a href="">Edit search type</a>
-            </div>
-            <form class="search__container__form">
-                <div class="form-control">
-                    <input type="text">
-                    <label>Manufacturer</label>
-                </div>
-                <div class="form-control">
-                    <input type="text">
-                    <label>Model</label>
-                </div>
-                <div class="form-control">
-                    <input type="text">
-                    <label>Serial Number</label>
-                </div>
-                <div class="form-control">
-                    <button type="submit">Search</button>
-                </div>
-            </form>
+<div class="container">
+    <header class="header">
+        <div class="header-container">
+            <nav>
+                <a href="#">
+                    <span>Equipment</span>
+                </a>
+                <a href="#">
+                    <i class="fa fa-search"></i>
+                    <span>Search</span>
+                </a>
+                <a href="#">
+                    <i class="fa fa-cloud-upload"></i>
+                    <span>Upload</span>
+                </a>
+                <a href="#">
+                    <i class="fa fa-ticket"></i>
+                    <span>Saved Models</span>
+                </a>
+                <a href="#">
+                    <i class="fa fa-files-o"></i>
+                    <span>Groups</span>
+                </a>
+                <a href="#">
+                    <i class="fa fa-bar-chart"></i>
+                    <span>Market Activity</span>
+                </a>
+                <a href="#">
+                    <i class="material-icons">help_outline</i>
+                    <span>Help</span>
+                </a>
+            </nav>
+            <a class="header-container__profile" href="#"><i class="material-icons">person</i></a>
         </div>
-    </section>
-    <section class="main">
-        <aside class="sidebar">
-            <h5>Refine Results</h5>
-            <div class="sidebar__container">
-                <div class="subtype">
-                    <h6>SUBTYPE</h6>
-                    <a href="">Clear</a>
+    </header>
+
+    <main>
+        <section class="search">
+            <div class="search__container">
+                <h3>
+                    Search by Manufacturer, Model, or Serial Number
+                </h3>
+                <div class="search__container__description">
+                    <h6>
+                        You`re search for models that have both
+                        <b>Values & Market Data</b> and <b>Specs</b>
+                    </h6>
+                    <a href="#">Edit search type</a>
                 </div>
-                <div class="subtype-search">
-                    <input type="text" placeholder="Search">
-                    <div class="subtype-search__list">
-                        <div>
-                            <i class="fa fa-square-o"></i>
-                            <span>SUBTYPE(23)</span>
-                        </div>
-                        <div>
-                            <i class="fa fa-square-o"></i>
-                            <span>SUBTYPE(23)</span>
-                        </div>
-                        <div>
-                            <i class="fa fa-square-o"></i>
-                            <span>SUBTYPE(23)</span>
-                        </div>
-                        <div>
-                            <i class="fa fa-square-o"></i>
-                            <span>SUBTYPE(23)</span>
-                        </div>
-                        <div>
-                            <i class="fa fa-square-o"></i>
-                            <span>SUBTYPE(23)</span>
-                        </div>
-                        <div>
-                            <i class="fa fa-square-o"></i>
-                            <span>SUBTYPE(23)</span>
-                        </div>
-                        <div>
-                            <i class="fa fa-square-o"></i>
-                            <span>SUBTYPE(23)</span>
+                <form class="search__container__form">
+                    <div class="form-control">
+                        <input type="text" id="manufacturer">
+                        <label for="manufacturer">Manufacturer</label>
+                    </div>
+                    <div class="form-control">
+                        <input type="text" id="model">
+                        <label for="model">Model</label>
+                    </div>
+                    <div class="form-control">
+                        <input type="text" id="serialNumber">
+                        <label for="serialNumber">Serial Number</label>
+                    </div>
+                    <div class="form-control">
+                        <button type="submit">Search</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="main">
+            <aside class="sidebar">
+                <h5>Refine Results</h5>
+                <div class="sidebar__container">
+                    <div class="subtype">
+                        <h6>SUBTYPE</h6>
+                        <button>Clear</button>
+                    </div>
+                    <div class="subtype-search">
+                        <input class="subtype-search__search" type="text" placeholder="Search">
+                        <div class="subtype-search__list">
+                            <div>
+                                <input class="checkbox" type="checkbox" id="checkbox" />
+                                <label for="checkbox">SUBTYPE(23)</label>
+                            </div>
+                            <div>
+                                <input class="checkbox" type="checkbox" id="checkbox1" />
+                                <label for="checkbox1">SUBTYPE(23)</label>
+                            </div>
+                            <div>
+                                <input class="checkbox" type="checkbox" id="checkbox2" />
+                                <label for="checkbox2">SUBTYPE(23)</label>
+                            </div>
+                            <div>
+                                <input class="checkbox" type="checkbox" id="checkbox3" />
+                                <label for="checkbox3">SUBTYPE(23)</label>
+                            </div>
+                            <div>
+                                <input class="checkbox" type="checkbox" id="checkbox4" />
+                                <label for="checkbox4">SUBTYPE(23)</label>
+                            </div>
+                            <div>
+                                <input class="checkbox" type="checkbox" id="checkbox5" />
+                                <label for="checkbox5">SUBTYPE(23)</label>
+                            </div>
+                            <div>
+                                <input class="checkbox" type="checkbox" id="checkbox6" />
+                                <label for="checkbox6">SUBTYPE(23)</label>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </aside>
+
+            <div class="main-content">
+                <section class="search-tags">
+                    <button>Clear All</button>
+                    <button><i class="fa fa-close"></i>Excavators</button>
+                    <button><i class="fa fa-close"></i>Excavators attachments</button>
+                    <button><i class="fa fa-close"></i>Values & Market Data</button>
+                    <button><i class="fa fa-close"></i>Specs</button>
+                </section>
+                <section class="sorted-items">
+                    <section class="sorted-items__sorted-by">
+                        <label for="select">5,712 results</label>
+                        <div>
+                            <select id="select">
+                                <option hidden selected>Sort by...</option>
+                                <option>Excavators</option>
+                                <option>Excavators attachments</option>
+                                <option>Values & Market Data</option>
+                            </select>
+                        </div>
+                    </section>
+                    <section class="sorted-items__list">
+                        <article class="sorted-items__list__item">
+                            <section class="content">
+                                <figure class="content__image">not found</figure>
+                                <div class="content__info">
+                                    <header class="content__info__sections">
+                                        <a href="#">Aerial Lifts</a>
+                                        <i class="fa fa-angle-right"></i>
+                                        <a href="#">l.C. Self Propelled Telescopic Boom Aerial Lifts</a>
+                                    </header>
+                                    <h2>SP460CJ</h2>
+                                    <h4>AICHI</h4>
+                                    <footer>
+                                        <div>
+                                            <span>Year: </span>
+                                            <span>
+                                            <time>2003 - 2012</time>
+                                        </span>
+                                        </div>
+                                        <div>
+                                            <span>Size/Variance: </span>
+                                            <span>41 - 50 ft.</span>
+                                        </div>
+                                    </footer>
+                                </div>
+                            </section>
+                            <aside class="tags">
+                                <div>
+                                    <a href="#">
+                                        Gosts/Rental Rate
+                                    </a>
+                                    <a href="#">
+                                        Blue Book
+                                    </a>
+                                </div>
+
+                                <div>
+                                    <a href="#">
+                                        Values and Market
+                                    </a>
+                                    <a href="#">
+                                        Data
+                                    </a>
+                                </div>
+                                <div class="tags__upgrade">
+                                    <a href="#">
+                                        Verification
+                                    </a>
+                                    <button>Upgrade</button>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        Retail Rental
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        Specs
+                                    </a>
+                                </div>
+                            </aside>
+                        </article>
+                        <article class="sorted-items__list__item">
+                            <section class="content">
+                                <figure class="content__image">not found</figure>
+                                <div class="content__info">
+                                    <header class="content__info__sections">
+                                        <a href="#">Aerial Lifts</a>
+                                        <i class="fa fa-angle-right"></i>
+                                        <a href="#">l.C. Self Propelled Telescopic Boom Aerial Lifts</a>
+                                    </header>
+                                    <h2>SP460CJ</h2>
+                                    <h4>AICHI</h4>
+                                    <footer>
+                                        <div>
+                                            <span>Year: </span>
+                                            <span>
+                                            <time>2003 - 2012</time>
+                                        </span>
+                                        </div>
+                                        <div>
+                                            <span>Size/Variance: </span>
+                                            <span>41 - 50 ft.</span>
+                                        </div>
+                                    </footer>
+                                </div>
+                            </section>
+                            <aside class="tags">
+                                <div>
+                                    <a href="#">
+                                        Gosts/Rental Rate
+                                    </a>
+                                    <a href="#">
+                                        Blue Book
+                                    </a>
+                                </div>
+
+                                <div>
+                                    <a href="#">
+                                        Values and Market
+                                    </a>
+                                    <a href="#">
+                                        Data
+                                    </a>
+                                </div>
+                                <div class="tags__upgrade">
+                                    <a href="#">
+                                        Verification
+                                    </a>
+                                    <button>Upgrade</button>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        Retail Rental
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        Specs
+                                    </a>
+                                </div>
+                            </aside>
+                        </article>
+                        <article class="sorted-items__list__item">
+                            <section class="content">
+                                <figure class="content__image">not found</figure>
+                                <div class="content__info">
+                                    <header class="content__info__sections">
+                                        <a href="#">Aerial Lifts</a>
+                                        <i class="fa fa-angle-right"></i>
+                                        <a href="#">l.C. Self Propelled Telescopic Boom Aerial Lifts</a>
+                                    </header>
+                                    <h2>SP460CJ</h2>
+                                    <h4>AICHI</h4>
+                                    <footer>
+                                        <div>
+                                            <span>Year: </span>
+                                            <span>
+                                            <time>2003 - 2012</time>
+                                        </span>
+                                        </div>
+                                        <div>
+                                            <span>Size/Variance: </span>
+                                            <span>41 - 50 ft.</span>
+                                        </div>
+                                    </footer>
+                                </div>
+                            </section>
+                            <aside class="tags">
+                                <div>
+                                    <a href="#">
+                                        Gosts/Rental Rate
+                                    </a>
+                                    <a href="#">
+                                        Blue Book
+                                    </a>
+                                </div>
+
+                                <div>
+                                    <a href="#">
+                                        Values and Market
+                                    </a>
+                                    <a href="#">
+                                        Data
+                                    </a>
+                                </div>
+                                <div class="tags__upgrade">
+                                    <a href="#">
+                                        Verification
+                                    </a>
+                                    <button>Upgrade</button>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        Retail Rental
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        Specs
+                                    </a>
+                                </div>
+                            </aside>
+                        </article>
+                        <article class="sorted-items__list__item">
+                            <section class="content">
+                                <figure class="content__image">not found</figure>
+                                <div class="content__info">
+                                    <header class="content__info__sections">
+                                        <a href="#">Aerial Lifts</a>
+                                        <i class="fa fa-angle-right"></i>
+                                        <a href="#">l.C. Self Propelled Telescopic Boom Aerial Lifts</a>
+                                    </header>
+                                    <h2>SP460CJ</h2>
+                                    <h4>AICHI</h4>
+                                    <footer>
+                                        <div>
+                                            <span>Year: </span>
+                                            <span>
+                                            <time>2003 - 2012</time>
+                                        </span>
+                                        </div>
+                                        <div>
+                                            <span>Size/Variance: </span>
+                                            <span>41 - 50 ft.</span>
+                                        </div>
+                                    </footer>
+                                </div>
+                            </section>
+                            <aside class="tags">
+                                <div>
+                                    <a href="#">
+                                        Gosts/Rental Rate
+                                    </a>
+                                    <a href="#">
+                                        Blue Book
+                                    </a>
+                                </div>
+
+                                <div>
+                                    <a href="#">
+                                        Values and Market
+                                    </a>
+                                    <a href="#">
+                                        Data
+                                    </a>
+                                </div>
+                                <div class="tags__upgrade">
+                                    <a href="#">
+                                        Verification
+                                    </a>
+                                    <button>Upgrade</button>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        Retail Rental
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        Specs
+                                    </a>
+                                </div>
+                            </aside>
+                        </article>
+                    </section>
+                </section>
             </div>
-        </aside>
 
-        <div class="main-content">
-            <section class="search-tags">
-                <a href="">Clear All</a>
-                <button><i class="fa fa-close"></i>Excavators</button>
-                <button><i class="fa fa-close"></i>Excavators attachments</button>
-                <button><i class="fa fa-close"></i>Values & Market Data</button>
-                <button><i class="fa fa-close"></i>Specs</button>
-            </section>
-            <section class="sorted-items">
-                <section class="sorted-items__sorted-by">
-                    <span>5,712 results</span>
-                    <div>
-                        <select>
-                            <option hidden selected>Sort by...</option>
-                            <option>Excavators</option>
-                            <option>Excavators attachments</option>
-                            <option>Values & Market Data</option>
-                        </select>
-                    </div>
-                </section>
-                <section class="sorted-items__list">
-                    <article class="sorted-items__list__item">
-                        <section class="content">
-                            <figure class="content__image">not found</figure>
-                            <div class="content__info">
-                                <header class="content__info__sections">
-                                    <a href="">Aerial Lifts</a>
-                                    <i class="fa fa-angle-right"></i>
-                                    <a href="">l.C. Self Propelled Telescopic Boom Aerial Lifts</a>
-                                </header>
-                                <h2>SP460CJ</h2>
-                                <h4>AICHI</h4>
-                                <footer>
-                                    <div>
-                                        <span>Year: </span>
-                                        <span>
-                                            <time>2003 - 2012</time>
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <span>Size/Variance: </span>
-                                        <span>41 - 50 ft.</span>
-                                    </div>
-                                </footer>
-                            </div>
-                        </section>
-                        <aside class="tags">
-                            <div>
-                                <a href="">
-                                    Gosts/Rental Rate
-                                </a>
-                                <a href="">
-                                    Blue Book
-                                </a>
-                            </div>
-
-                            <div>
-                                <a href="">
-                                    Values and Market
-                                </a>
-                                <a href="">
-                                    Data
-                                </a>
-                            </div>
-                            <div class="tags__upgrade">
-                                <a href="">
-                                    Verification
-                                </a>
-                                <button>Upgrade</button>
-                            </div>
-                            <div>
-                                <a href="">
-                                    Retail Rental
-                                </a>
-                            </div>
-                            <div>
-                                <a href="">
-                                    Specs
-                                </a>
-                            </div>
-                        </aside>
-                    </article>
-                    <article class="sorted-items__list__item">
-                        <section class="content">
-                            <figure class="content__image">not found</figure>
-                            <div class="content__info">
-                                <header class="content__info__sections">
-                                    <a href="">Aerial Lifts</a>
-                                    <i class="fa fa-angle-right"></i>
-                                    <a href="">l.C. Self Propelled Telescopic Boom Aerial Lifts</a>
-                                </header>
-                                <h2>SP460CJ</h2>
-                                <h4>AICHI</h4>
-                                <footer>
-                                    <div>
-                                        <span>Year: </span>
-                                        <span>
-                                            <time>2003 - 2012</time>
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <span>Size/Variance: </span>
-                                        <span>41 - 50 ft.</span>
-                                    </div>
-                                </footer>
-                            </div>
-                        </section>
-                        <aside class="tags">
-                            <div>
-                                <a href="">
-                                    Gosts/Rental Rate
-                                </a>
-                                <a href="">
-                                    Blue Book
-                                </a>
-                            </div>
-
-                            <div>
-                                <a href="">
-                                    Values and Market
-                                </a>
-                                <a href="">
-                                    Data
-                                </a>
-                            </div>
-                            <div class="tags__upgrade">
-                                <a href="">
-                                    Verification
-                                </a>
-                                <button>Upgrade</button>
-                            </div>
-                            <div>
-                                <a href="">
-                                    Retail Rental
-                                </a>
-                            </div>
-                            <div>
-                                <a href="">
-                                    Specs
-                                </a>
-                            </div>
-                        </aside>
-                    </article>
-                    <article class="sorted-items__list__item">
-                        <section class="content">
-                            <figure class="content__image">not found</figure>
-                            <div class="content__info">
-                                <header class="content__info__sections">
-                                    <a href="">Aerial Lifts</a>
-                                    <i class="fa fa-angle-right"></i>
-                                    <a href="">l.C. Self Propelled Telescopic Boom Aerial Lifts</a>
-                                </header>
-                                <h2>SP460CJ</h2>
-                                <h4>AICHI</h4>
-                                <footer>
-                                    <div>
-                                        <span>Year: </span>
-                                        <span>
-                                            <time>2003 - 2012</time>
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <span>Size/Variance: </span>
-                                        <span>41 - 50 ft.</span>
-                                    </div>
-                                </footer>
-                            </div>
-                        </section>
-                        <aside class="tags">
-                            <div>
-                                <a href="">
-                                    Gosts/Rental Rate
-                                </a>
-                                <a href="">
-                                    Blue Book
-                                </a>
-                            </div>
-
-                            <div>
-                                <a href="">
-                                    Values and Market
-                                </a>
-                                <a href="">
-                                    Data
-                                </a>
-                            </div>
-                            <div class="tags__upgrade">
-                                <a href="">
-                                    Verification
-                                </a>
-                                <button>Upgrade</button>
-                            </div>
-                            <div>
-                                <a href="">
-                                    Retail Rental
-                                </a>
-                            </div>
-                            <div>
-                                <a href="">
-                                    Specs
-                                </a>
-                            </div>
-                        </aside>
-                    </article>
-                    <article class="sorted-items__list__item">
-                        <section class="content">
-                            <figure class="content__image">not found</figure>
-                            <div class="content__info">
-                                <header class="content__info__sections">
-                                    <a href="">Aerial Lifts</a>
-                                    <i class="fa fa-angle-right"></i>
-                                    <a href="">l.C. Self Propelled Telescopic Boom Aerial Lifts</a>
-                                </header>
-                                <h2>SP460CJ</h2>
-                                <h4>AICHI</h4>
-                                <footer>
-                                    <div>
-                                        <span>Year: </span>
-                                        <span>
-                                            <time>2003 - 2012</time>
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <span>Size/Variance: </span>
-                                        <span>41 - 50 ft.</span>
-                                    </div>
-                                </footer>
-                            </div>
-                        </section>
-                        <aside class="tags">
-                            <div>
-                                <a href="">
-                                    Gosts/Rental Rate
-                                </a>
-                                <a href="">
-                                    Blue Book
-                                </a>
-                            </div>
-
-                            <div>
-                                <a href="">
-                                    Values and Market
-                                </a>
-                                <a href="">
-                                    Data
-                                </a>
-                            </div>
-                            <div class="tags__upgrade">
-                                <a href="">
-                                    Verification
-                                </a>
-                                <button>Upgrade</button>
-                            </div>
-                            <div>
-                                <a href="">
-                                    Retail Rental
-                                </a>
-                            </div>
-                            <div>
-                                <a href="">
-                                    Specs
-                                </a>
-                            </div>
-                        </aside>
-                    </article>
-                </section>
-            </section>
-        </div>
-
-    </section>
-</main>
-
+        </section>
+    </main>
+</div>
 </body>
 </html>

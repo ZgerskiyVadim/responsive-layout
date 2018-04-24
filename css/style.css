@@ -4,9 +4,11 @@ body {
   margin: 0;
   font-family: "Source Sans Pro", sans-serif; }
 
+.container {
+  max-width: 1174px;
+  margin: 0 auto; }
+
 .header {
-  max-width: 874px;
-  margin: 0 auto;
   background-color: #eeeeee; }
 
 .header .header-container {
@@ -21,11 +23,11 @@ body {
   background-color: white; }
 
 .header .header-container nav a {
-  height: 4.7em;
+  height: 5em;
   display: flex;
   align-items: center;
-  padding: 0 1.2em;
-  font-size: 10px;
+  padding: 0 1.5em;
+  font-size: 0.8em;
   border-right: 1px solid #eeeeee;
   white-space: nowrap;
   cursor: pointer;
@@ -37,11 +39,11 @@ body {
 
 .header .header-container nav a i {
   margin-right: 0.2rem;
-  font-size: 14px;
+  font-size: 1.5em;
   color: #eeeeee; }
 
 .header .header-container nav a:first-child {
-  width: 170px;
+  width: 15em;
   padding: 0; }
 
 .header .header-container nav a:first-child span {
@@ -57,9 +59,6 @@ body {
 .header .header-container nav a:last-child {
   border-right: none; }
 
-.header .header-container nav a:last-child i {
-  margin-left: 5px; }
-
 .header .header-container nav a:hover {
   background-color: #ff7c23;
   border-right: 1px solid #ff7c23; }
@@ -68,50 +67,54 @@ body {
   color: white; }
 
 .header .header-container .header-container__profile {
-  margin: 0 3.4em 0 auto; }
+  display: flex;
+  text-align: center;
+  margin: 0 3.4em 0 auto;
+  text-decoration: none; }
 
 .header .header-container .header-container__profile i {
-  font-size: 20px;
+  font-size: 1.5em;
   color: #17394a; }
 
+.header .header-container .header-container__profile i:hover {
+  color: rgba(23, 57, 74, 0.62); }
+
 main {
-  display: block;
-  max-width: 874px;
-  margin: 0 auto; }
+  display: block; }
 
 main .search {
-  max-width: 874px;
   padding: 1.5em 3.4em 1.3em 3.4em;
   margin: 0 auto;
   background-color: #17394a;
   color: white; }
 
 main .search .search__container h3 {
-  margin: 0.5rem 0;
-  font-size: 1.3em;
+  margin: 0.5em 0;
+  font-size: 2em;
   font-weight: 400; }
 
 main .search .search__container .search__container__description {
   display: flex;
-  align-items: baseline;
-  margin: 0.5em 0 0.5em 0;
-  font-size: 0.8em; }
+  align-items: baseline; }
 
 main .search .search__container .search__container__description h6 {
   margin: 0;
-  font-size: 1em;
+  font-size: 1.5em;
   font-weight: 400; }
 
 main .search .search__container .search__container__description a {
   margin-left: 0.5em;
+  font-size: 1em;
   color: white; }
 
 main .search .search__container .search__container__form {
   display: flex;
-  margin-top: 1.2em; }
+  margin-top: 1.5em; }
 
 main .search .search__container .search__container__form .form-control {
   width: 24%;
+  display: flex;
+  flex-direction: column;
   margin-right: 1.7em; }
 
 main .search .search__container .search__container__form .form-control:last-child {
@@ -120,40 +123,44 @@ main .search .search__container .search__container__form .form-control:last-chil
 
 main .search .search__container .search__container__form .form-control input {
   width: 97%;
-  height: 25px;
+  height: 2em;
   padding-left: 0.5em;
+  font-size: 1em;
   border: 1px solid rgba(23, 57, 74, 0.62); }
 
 main .search .search__container .search__container__form .form-control button {
   width: 100%;
-  height: 29px;
+  height: 2.25em;
   background-color: #0fbc20;
   color: white;
-  font-size: 10px;
+  font-size: 1em;
   border: none;
   cursor: pointer;
   outline: none; }
 
+main .search .search__container .search__container__form .form-control button:hover {
+  background-color: #0cf31f; }
+
 main .search .search__container .search__container__form .form-control label {
-  font-size: 10px;
+  margin-top: 0.5em;
+  font-size: 1em;
   white-space: nowrap; }
 
 main .main {
   display: flex; }
 
 main .main .sidebar {
-  max-width: 17%;
-  padding: 1.4em 1.5em 0 3.4em;
+  padding: 1.5em;
   background-color: #eeeeee; }
 
 main .main .sidebar h5 {
   margin: 0;
-  font-size: 14px;
+  font-size: 1.5em;
   font-weight: 500;
   color: #17394a; }
 
 main .main .sidebar .sidebar__container {
-  width: 9.3em;
+  width: 13em;
   margin-top: 1em;
   border: 1px solid #17394a; }
 
@@ -161,30 +168,36 @@ main .main .sidebar .subtype {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.2em 0.3em 0.3em 0.3em;
+  padding: 0.4em;
   background-color: #17394a; }
 
 main .main .sidebar .subtype h6 {
   margin: 0;
-  font-size: 8px;
+  font-size: 0.9em;
   color: white; }
 
-main .main .sidebar .subtype a {
-  font-size: 8px;
-  color: white; }
+main .main .sidebar .subtype button {
+  padding: 0;
+  color: white;
+  font-size: 0.9em;
+  background: none;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  cursor: pointer; }
 
 main .main .sidebar .subtype-search {
-  height: 10rem;
+  height: 15em;
   padding: 0 0.5rem;
   overflow-y: scroll;
   overflow-x: hidden;
   background-color: white; }
 
-main .main .sidebar .subtype-search input {
+main .main .sidebar .subtype-search .subtype-search__search {
   width: 99%;
   padding: 0.4em 0 0.4em 0.5em;
   margin-top: 0.7em;
-  font-size: 9px;
+  font-size: 0.8em;
   border: 1px solid rgba(23, 57, 74, 0.62); }
 
 main .main .sidebar .subtype-search .subtype-search__list {
@@ -192,8 +205,15 @@ main .main .sidebar .subtype-search .subtype-search__list {
   flex-direction: column; }
 
 main .main .sidebar .subtype-search .subtype-search__list div {
+  display: flex;
+  align-items: center;
   margin-top: 0.8em;
-  font-size: 10px; }
+  font-size: 1em; }
+
+main .main .sidebar .subtype-search .subtype-search__list div .checkbox {
+  width: 0.8em;
+  margin: 0 0.5em 0 0;
+  border: 1px solid rgba(23, 57, 74, 0.62); }
 
 main .main .main-content {
   width: 100%; }
@@ -201,20 +221,20 @@ main .main .main-content {
 main .main .main-content .search-tags {
   display: flex;
   align-items: center;
-  padding: 1.1em 3.4em 1em 1.5em;
-  border-bottom: 1px solid #eeeeee; }
+  padding: 1.5em 3.4em 1.5em 1.5em;
+  border-bottom: 2px solid #eeeeee; }
 
 main .main .main-content .search-tags a {
   margin-right: 1em;
   color: #17394a;
-  font-size: 10px;
+  font-size: 1em;
   cursor: pointer; }
 
 main .main .main-content .search-tags button {
-  height: 30px;
+  height: 2em;
   padding: 0 1em;
   margin-right: 0.8em;
-  font-size: 10px;
+  font-size: 1em;
   background-color: #ff7c23;
   color: #eeeeee;
   border: none;
@@ -223,17 +243,34 @@ main .main .main-content .search-tags button {
 
 main .main .main-content .search-tags button i {
   margin-right: 0.5em;
-  font-size: 8px; }
+  font-size: 1em; }
+
+main .main .main-content .search-tags button:first-child {
+  height: auto;
+  padding: 0;
+  color: #17394a;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #17394a; }
+
+main .main .main-content .search-tags button:first-child:hover {
+  background: none; }
 
 main .main .main-content .search-tags button:last-child {
   margin-right: 0; }
 
+main .main .main-content .search-tags button:hover {
+  background-color: #ff9e33; }
+
 main .main .main-content .sorted-items {
-  padding: 1.2em 3.4em 0 1.5em; }
+  margin: 1.5em 3.4em 0 1.5em; }
 
 main .main .main-content .sorted-items .sorted-items__sorted-by {
   display: flex;
   justify-content: space-between; }
+
+main .main .main-content .sorted-items .sorted-items__sorted-by label {
+  font-size: 1.5em; }
 
 main .main .main-content .sorted-items .sorted-items__sorted-by div {
   position: relative; }
@@ -241,12 +278,13 @@ main .main .main-content .sorted-items .sorted-items__sorted-by div {
 main .main .main-content .sorted-items .sorted-items__sorted-by div select {
   display: block;
   width: 9em;
-  height: 23px;
+  height: 2em;
   padding-left: 0.5em;
-  font-size: 10px;
+  font-size: 1em;
   color: grey;
   border: 1px solid rgba(23, 57, 74, 0.62);
-  background-color: white; }
+  background-color: white;
+  cursor: pointer; }
 
 main .main .main-content .sorted-items .sorted-items__sorted-by div:after {
   content: '▼';
@@ -254,41 +292,39 @@ main .main .main-content .sorted-items .sorted-items__sorted-by div:after {
   right: 1px;
   top: 1px;
   height: 13px;
-  padding: 0.5em;
-  font-size: 8px;
+  padding: 0.3em 0.5em 0.7em 0.5em;
   background-color: #eeeeee;
   pointer-events: none; }
 
 main .main .main-content .sorted-items .sorted-items__list {
   display: flex;
   flex-direction: column;
-  margin-top: 1em; }
+  margin-top: 1.5em; }
 
 main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__item {
   display: flex;
   margin-top: 1.1em;
-  font-size: 10px;
+  font-size: 1em;
   border: 1px solid lightgrey; }
 
 main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__item:first-child {
   margin-top: 0; }
 
 main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__item .content {
-  width: 85%;
+  width: 80%;
   display: flex;
-  padding: 2em; }
+  padding: 1.5em; }
 
 main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__item .content .content__image {
-  width: 30%;
+  width: 100%;
   height: 100%;
-  margin: auto;
+  margin: 0;
   border: 1px solid lightgrey; }
 
 main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__item .content .content__info {
-  width: 70%;
   display: flex;
   flex-direction: column;
-  margin: 0.8em 1.6em 0.8em 1.6em;
+  margin: 0.8em 0 0.8em 1.5em;
   color: #17394a; }
 
 main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__item .content .content__info .content__info__sections {
@@ -296,18 +332,20 @@ main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__
   align-items: center; }
 
 main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__item .content .content__info .content__info__sections a {
-  font-size: 9px;
+  font-size: 1em;
+  white-space: nowrap;
   color: #17394a; }
 
 main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__item .content .content__info .content__info__sections i {
-  font-size: 6px;
+  font-size: 0.5em;
   margin: 0 1em; }
 
 main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__item .content .content__info h2 {
-  font-size: 17px;
+  font-size: 1.5em;
   margin: 0.7em 0 0; }
 
 main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__item .content .content__info h4 {
+  font-size: 1.5em;
   margin: 0.2em 0 0.8em; }
 
 main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__item .content .content__info footer {
@@ -320,15 +358,15 @@ main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__
   margin-right: 15%; }
 
 main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__item .tags {
-  width: 15%;
-  padding: 1.5em 2em 1.5em 1.1em;
+  width: 20%;
+  padding: 1.5em 1em;
   background-color: #eeeeee;
   border-left: 1px solid lightgrey; }
 
 main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__item .tags div {
   display: flex;
   flex-direction: column;
-  margin-top: 0.8em; }
+  margin-top: 1em; }
 
 main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__item .tags div:first-child {
   margin-top: 0; }
@@ -339,14 +377,17 @@ main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__
 main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__item .tags .tags__upgrade {
   display: flex;
   flex-direction: row;
-  align-items: flex-end; }
+  align-items: baseline; }
 
 main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__item .tags .tags__upgrade button {
   padding: 0.3em 0.3em;
   margin: 0 0.3em;
-  font-size: 7px;
+  font-size: 1em;
   background-color: #17394a;
   color: white;
   border: none;
   cursor: pointer;
   outline: none; }
+
+main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__item .tags .tags__upgrade button:hover {
+  background-color: rgba(23, 57, 74, 0.62); }
