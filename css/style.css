@@ -1,13 +1,10 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
-body {
-  margin: 0;
-  font-family: "Source Sans Pro", sans-serif; }
-
-.container {
-  max-width: 1174px;
-  margin: 0 auto; }
-
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
 .header {
   display: flex;
   align-items: center;
@@ -75,49 +72,50 @@ body {
 .header .header__profile:hover i {
   opacity: 1; }
 
-main {
-  display: block; }
+@media (min-width: 767px) and (max-width: 945px) {
+  .header {
+    position: absolute; } }
 
-main .search {
+.search {
   padding: 1.5em calc(1.5em * 2);
   margin: 0 auto;
   background-color: #17394a;
   color: white; }
 
-main .search .search__container h3 {
+.search .search__container h3 {
   margin: 0.5em 0;
   font-size: 2em;
   font-weight: 400; }
 
-main .search .search__container .search__container__description {
+.search .search__container .search__container__description {
   display: flex;
   align-items: baseline; }
 
-main .search .search__container .search__container__description h6 {
+.search .search__container .search__container__description h6 {
   margin: 0;
   font-size: 1.5em;
   font-weight: 400; }
 
-main .search .search__container .search__container__description a {
+.search .search__container .search__container__description a {
   margin-left: 0.5em;
   font-size: 1.5em;
   color: white; }
 
-main .search .search__container .search__container__form {
+.search .search__container .search__container__form {
   display: flex;
   margin-top: 1.5em; }
 
-main .search .search__container .search__container__form .form-control {
+.search .search__container .search__container__form .form-control {
   width: 24%;
   display: flex;
   flex-direction: column;
   margin-right: 1.7em; }
 
-main .search .search__container .search__container__form .form-control:last-child {
+.search .search__container .search__container__form .form-control:last-child {
   width: 25%;
   margin-right: 0; }
 
-main .search .search__container .search__container__form .form-control input {
+.search .search__container .search__container__form .form-control input {
   width: 97%;
   height: 2em;
   padding-left: 0.5em;
@@ -126,7 +124,7 @@ main .search .search__container .search__container__form .form-control input {
   box-shadow: 0 0 10px #1e78ff;
   outline: none; }
 
-main .search .search__container .search__container__form .form-control button {
+.search .search__container .search__container__form .form-control button {
   width: 100%;
   height: 2.25em;
   transition: opacity 0.3s;
@@ -138,46 +136,43 @@ main .search .search__container .search__container__form .form-control button {
   cursor: pointer;
   outline: none; }
 
-main .search .search__container .search__container__form .form-control button:hover {
+.search .search__container .search__container__form .form-control button:hover {
   color: #17394a;
   opacity: 0.7; }
 
-main .search .search__container .search__container__form .form-control label {
+.search .search__container .search__container__form .form-control label {
   margin-top: 0.5em;
   font-size: 1em;
   white-space: nowrap; }
 
-main .main {
-  display: flex; }
-
-main .main .sidebar {
+.sidebar {
   padding: 1.5em;
   background-color: #eeeeee; }
 
-main .main .sidebar h5 {
+.sidebar h5 {
   margin: 0;
   font-size: 1.5em;
   font-weight: 500;
   color: #17394a; }
 
-main .main .sidebar .sidebar__container {
+.sidebar .sidebar__container {
   width: 13em;
   margin-top: 1em;
   border: 1px solid #17394a; }
 
-main .main .sidebar .subtype {
+.sidebar .subtype {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.4em;
   background-color: #17394a; }
 
-main .main .sidebar .subtype h6 {
+.sidebar .subtype h6 {
   margin: 0;
   font-size: 0.9em;
   color: white; }
 
-main .main .sidebar .subtype button {
+.sidebar .subtype button {
   padding: 0;
   color: white;
   font-size: 0.9em;
@@ -187,17 +182,17 @@ main .main .sidebar .subtype button {
   outline: none;
   cursor: pointer; }
 
-main .main .sidebar .subtype button:hover {
+.sidebar .subtype button:hover {
   border-bottom: none; }
 
-main .main .sidebar .subtype-search {
+.sidebar .subtype-search {
   height: 15em;
   padding: 0 0.5rem;
   overflow-y: scroll;
   overflow-x: hidden;
   background-color: white; }
 
-main .main .sidebar .subtype-search .subtype-search__search {
+.sidebar .subtype-search .subtype-search__search {
   width: 98%;
   padding: 0.4em 0 0.4em 0.5em;
   margin-top: 0.7em;
@@ -205,37 +200,34 @@ main .main .sidebar .subtype-search .subtype-search__search {
   border: 1px solid rgba(23, 57, 74, 0.62);
   outline: none; }
 
-main .main .sidebar .subtype-search .subtype-search__list {
+.sidebar .subtype-search .subtype-search__list {
   display: flex;
   flex-direction: column; }
 
-main .main .sidebar .subtype-search .subtype-search__list div {
+.sidebar .subtype-search .subtype-search__list div {
   display: flex;
   align-items: center;
   margin-top: 0.8em;
   font-size: 1em; }
 
-main .main .sidebar .subtype-search .subtype-search__list div .checkbox {
+.sidebar .subtype-search .subtype-search__list div .checkbox {
   width: 0.8em;
   margin: 0 0.5em 0 0;
   border: 1px solid rgba(23, 57, 74, 0.62); }
 
-main .main .main-content {
-  width: 100%; }
-
-main .main .main-content .search-tags {
+.search-tags {
   display: flex;
   align-items: center;
   padding: 1.5em 1.5em 1.5em 1.5em;
   border-bottom: 2px solid #eeeeee; }
 
-main .main .main-content .search-tags a {
+.search-tags a {
   margin-right: 1em;
   color: #17394a;
   font-size: 1em;
   cursor: pointer; }
 
-main .main .main-content .search-tags button {
+.search-tags button {
   height: 2em;
   padding: 0 1em;
   margin-right: 0.8em;
@@ -247,11 +239,11 @@ main .main .main-content .search-tags button {
   cursor: pointer;
   outline: none; }
 
-main .main .main-content .search-tags button i {
+.search-tags button i {
   margin-right: 0.5em;
   font-size: 1em; }
 
-main .main .main-content .search-tags button:first-child {
+.search-tags button:first-child {
   height: auto;
   padding: 0;
   color: #17394a;
@@ -259,16 +251,130 @@ main .main .main-content .search-tags button:first-child {
   border: none;
   border-bottom: 1px solid #17394a; }
 
-main .main .main-content .search-tags button:first-child:hover {
+.search-tags button:first-child:hover {
   background: none;
   border-bottom: none; }
 
-main .main .main-content .search-tags button:last-child {
+.search-tags button:last-child {
   margin-right: 0; }
 
-main .main .main-content .search-tags button:hover {
+.search-tags button:hover {
   color: #17394a;
   background-color: #ff9e33; }
+
+.sorted-items__list__item {
+  display: flex;
+  margin-top: 1.1em;
+  font-size: 1em;
+  border: 1px solid lightgrey; }
+
+.sorted-items__list__item:first-child {
+  margin-top: 0; }
+
+.sorted-items__list__item .content {
+  width: 80%;
+  display: flex;
+  padding: 1.5em; }
+
+.sorted-items__list__item .content .content__image {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border: 1px solid lightgrey; }
+
+.sorted-items__list__item .content .content__image img {
+  max-width: 100%;
+  max-height: 100%; }
+
+.sorted-items__list__item .content .content__info {
+  display: flex;
+  flex-direction: column;
+  margin: 0.8em 0 0.8em 1.5em;
+  color: #17394a; }
+
+.sorted-items__list__item .content .content__info .content__info__sections {
+  display: flex;
+  align-items: center; }
+
+.sorted-items__list__item .content .content__info .content__info__sections a {
+  font-size: 1em;
+  white-space: nowrap;
+  color: #17394a; }
+
+.sorted-items__list__item .content .content__info .content__info__sections i {
+  font-size: 0.5em;
+  margin: 0 1em; }
+
+.sorted-items__list__item .content .content__info h2 {
+  font-size: 1.5em;
+  margin: 0.7em 0 0; }
+
+.sorted-items__list__item .content .content__info h4 {
+  font-size: 1.5em;
+  margin: 0.2em 0 0.8em; }
+
+.sorted-items__list__item .content .content__info footer {
+  display: flex; }
+
+.sorted-items__list__item .content .content__info footer div {
+  margin: 0.5em 0; }
+
+.sorted-items__list__item .content .content__info footer div:first-child {
+  margin-right: 15%; }
+
+.sorted-items__list__item .tags {
+  width: 20%;
+  padding: 1.5em 1em;
+  background-color: #eeeeee;
+  border-left: 1px solid lightgrey; }
+
+.sorted-items__list__item .tags div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em; }
+
+.sorted-items__list__item .tags div:first-child {
+  margin-top: 0; }
+
+.sorted-items__list__item .tags div a {
+  color: #17394a; }
+
+.sorted-items__list__item .tags .tags__upgrade {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline; }
+
+.sorted-items__list__item .tags .tags__upgrade button {
+  padding: 0.4em;
+  margin-left: 0.3em;
+  font-size: 0.8em;
+  background-color: #17394a;
+  color: white;
+  border: none;
+  cursor: pointer;
+  outline: none; }
+
+.sorted-items__list__item .tags .tags__upgrade button:hover {
+  background-color: rgba(23, 57, 74, 0.62); }
+
+body {
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif; }
+
+.container {
+  max-width: 1174px;
+  margin: 0 auto; }
+
+main {
+  display: block; }
+
+main .main {
+  display: flex; }
+
+main .main .main-content {
+  width: 100%; }
 
 main .main .main-content .sorted-items {
   padding: 1.5em 1.5em 1.5em 1.5em; }
@@ -309,100 +415,3 @@ main .main .main-content .sorted-items .sorted-items__list {
   display: flex;
   flex-direction: column;
   margin-top: 1.5em; }
-
-main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__item {
-  display: flex;
-  margin-top: 1.1em;
-  font-size: 1em;
-  border: 1px solid lightgrey; }
-
-main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__item:first-child {
-  margin-top: 0; }
-
-main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__item .content {
-  width: 80%;
-  display: flex;
-  padding: 1.5em; }
-
-main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__item .content .content__image {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  border: 1px solid lightgrey; }
-
-main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__item .content .content__image img {
-  max-width: 100%;
-  max-height: 100%; }
-
-main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__item .content .content__info {
-  display: flex;
-  flex-direction: column;
-  margin: 0.8em 0 0.8em 1.5em;
-  color: #17394a; }
-
-main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__item .content .content__info .content__info__sections {
-  display: flex;
-  align-items: center; }
-
-main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__item .content .content__info .content__info__sections a {
-  font-size: 1em;
-  white-space: nowrap;
-  color: #17394a; }
-
-main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__item .content .content__info .content__info__sections i {
-  font-size: 0.5em;
-  margin: 0 1em; }
-
-main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__item .content .content__info h2 {
-  font-size: 1.5em;
-  margin: 0.7em 0 0; }
-
-main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__item .content .content__info h4 {
-  font-size: 1.5em;
-  margin: 0.2em 0 0.8em; }
-
-main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__item .content .content__info footer {
-  display: flex; }
-
-main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__item .content .content__info footer div {
-  margin: 0.5em 0; }
-
-main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__item .content .content__info footer div:first-child {
-  margin-right: 15%; }
-
-main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__item .tags {
-  width: 20%;
-  padding: 1.5em 1em;
-  background-color: #eeeeee;
-  border-left: 1px solid lightgrey; }
-
-main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__item .tags div {
-  display: flex;
-  flex-direction: column;
-  margin-top: 1em; }
-
-main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__item .tags div:first-child {
-  margin-top: 0; }
-
-main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__item .tags div a {
-  color: #17394a; }
-
-main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__item .tags .tags__upgrade {
-  display: flex;
-  flex-direction: row;
-  align-items: baseline; }
-
-main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__item .tags .tags__upgrade button {
-  padding: 0.4em;
-  margin-left: 0.3em;
-  font-size: 0.8em;
-  background-color: #17394a;
-  color: white;
-  border: none;
-  cursor: pointer;
-  outline: none; }
-
-main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__item .tags .tags__upgrade button:hover {
-  background-color: rgba(23, 57, 74, 0.62); }

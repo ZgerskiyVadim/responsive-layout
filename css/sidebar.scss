@@ -1,0 +1,72 @@
+@import "main.scss";
+
+.sidebar {
+  padding: 1.5em;
+  background-color: $background-grey;
+  h5 {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: $background-blue;
+  }
+  .sidebar__container {
+    width: 13em;
+    margin-top: 1em;
+    border: 1px solid $background-blue;
+  }
+  .subtype {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4em;
+    background-color: $background-blue;
+    h6 {
+      margin: 0;
+      font-size: 0.9em;
+      color: white;
+    }
+    button {
+      padding: 0;
+      color: white;
+      font-size: 0.9em;
+      background: none;
+      border: none;
+      border-bottom: 1px solid white;
+      outline: none;
+      cursor: pointer;
+      &:hover {
+        border-bottom: none;
+      }
+    }
+  }
+  .subtype-search {
+    height: 15em;
+    padding: 0 0.5rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: white;
+    .subtype-search__search {
+      width: 98%;
+      padding: 0.4em 0 0.4em 0.5em;
+      margin-top: 0.7em;
+      font-size: 0.8em;
+      border: 1px solid  $background-light_blue;
+      outline: none;
+    }
+    .subtype-search__list {
+      display: flex;
+      flex-direction: column;
+      div {
+        display: flex;
+        align-items: center;
+        margin-top: 0.8em;
+        font-size: 1em;
+        .checkbox {
+          width: 0.8em;
+          margin: 0 0.5em 0 0;
+          border: 1px solid $background-light_blue;
+        }
+      }
+    }
+  }
+}
