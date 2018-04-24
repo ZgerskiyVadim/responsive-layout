@@ -99,7 +99,7 @@ main .search .search__container .search__container__description h6 {
 
 main .search .search__container .search__container__description a {
   margin-left: 0.5em;
-  font-size: 1em;
+  font-size: 1.5em;
   color: white; }
 
 main .search .search__container .search__container__form {
@@ -323,14 +323,16 @@ main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__
   padding: 1.5em; }
 
 main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__item .content .content__image {
+  display: flex;
+  align-items: center;
   width: 100%;
   height: 100%;
   margin: 0;
   border: 1px solid lightgrey; }
 
 main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__item .content .content__image img {
-  width: 100%;
-  height: 100%; }
+  max-width: 100%;
+  max-height: 100%; }
 
 main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__item .content .content__info {
   display: flex;
