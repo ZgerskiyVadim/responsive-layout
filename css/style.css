@@ -383,7 +383,7 @@ main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__
   align-items: baseline; }
 
 main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__item .tags .tags__upgrade button {
-  padding: 0.3em 0.3em;
+  padding: 0.4em;
   margin: 0 0.3em;
   font-size: 1em;
   background-color: #17394a;
