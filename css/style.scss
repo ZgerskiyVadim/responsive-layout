@@ -64,7 +64,7 @@ body {
     .header-container__profile {
       display: flex;
       padding: 1.1em;
-      margin: 0 $padding-sections - 1em 0 auto;
+      margin: 0 calc(#{$padding-sections} - 1.1em) 0 auto;
       text-decoration: none;
       i {
         font-size: 1.5em;
