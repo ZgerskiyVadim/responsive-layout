@@ -78,6 +78,7 @@ body {
 
 
 main {
+  display: block;
   max-width: $max-width;
   margin: 0 auto;
   .search {
@@ -143,8 +144,6 @@ main {
   }
   .main {
     display: flex;
-    max-width: $max-width;
-    margin: 0 auto;
     .sidebar {
       max-width: 17%;
       padding: 1.4em 1.5em 0 $padding-sections;

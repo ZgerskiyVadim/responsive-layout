@@ -75,6 +75,7 @@ body {
   color: #17394a; }
 
 main {
+  display: block;
   max-width: 874px;
   margin: 0 auto; }
 
@@ -138,9 +139,7 @@ main .search .search__container .search__container__form .form-control label {
   white-space: nowrap; }
 
 main .main {
-  display: flex;
-  max-width: 874px;
-  margin: 0 auto; }
+  display: flex; }
 
 main .main .sidebar {
   max-width: 17%;
