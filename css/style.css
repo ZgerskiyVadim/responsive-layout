@@ -126,7 +126,8 @@ main .search .search__container .search__container__form .form-control input {
   height: 2em;
   padding-left: 0.5em;
   font-size: 1em;
-  border: 1px solid rgba(23, 57, 74, 0.62); }
+  border: 1px solid rgba(23, 57, 74, 0.62);
+  outline: none; }
 
 main .search .search__container .search__container__form .form-control button {
   width: 100%;
@@ -198,7 +199,8 @@ main .main .sidebar .subtype-search .subtype-search__search {
   padding: 0.4em 0 0.4em 0.5em;
   margin-top: 0.7em;
   font-size: 0.8em;
-  border: 1px solid rgba(23, 57, 74, 0.62); }
+  border: 1px solid rgba(23, 57, 74, 0.62);
+  outline: none; }
 
 main .main .sidebar .subtype-search .subtype-search__list {
   display: flex;
@@ -284,14 +286,15 @@ main .main .main-content .sorted-items .sorted-items__sorted-by div select {
   color: grey;
   border: 1px solid rgba(23, 57, 74, 0.62);
   background-color: white;
-  cursor: pointer; }
+  cursor: pointer;
+  outline: none; }
 
 main .main .main-content .sorted-items .sorted-items__sorted-by div:after {
   content: '▼';
   position: absolute;
   right: 1px;
   top: 1px;
-  height: 13px;
+  height: 0.9em;
   padding: 0.3em 0.5em 0.7em 0.5em;
   background-color: #eeeeee;
   pointer-events: none; }
