@@ -9,78 +9,76 @@ body {
   margin: 0 auto; }
 
 .header {
-  background-color: #eeeeee; }
+  display: flex;
+  align-items: center;
+  height: 4em; }
 
-.header .header-container {
+.header .header__image {
+  width: 15em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 1.5em 0 1.5em;
+  background-color: white;
+  border-right: 1px solid #eeeeee; }
+
+.header .header__image img {
+  width: 100%; }
+
+.header nav {
   display: flex;
   align-items: center; }
 
-.header .header-container nav {
-  width: 82%;
-  display: flex;
-  align-items: center;
-  padding-left: 3.4em;
-  background-color: white; }
-
-.header .header-container nav a {
+.header nav a {
   height: 5em;
   display: flex;
   align-items: center;
   padding: 0 1.5em;
+  transition: all 0.3s;
   font-size: 0.8em;
   border-right: 1px solid #eeeeee;
+  font-weight: 700;
+  color: rgba(23, 57, 74, 0.62);
   white-space: nowrap;
   cursor: pointer;
   text-decoration: none; }
 
-.header .header-container nav a span {
-  font-weight: 700;
-  color: #17394a; }
-
-.header .header-container nav a i {
+.header nav a i {
   margin-right: 0.2rem;
   font-size: 1.5em;
   color: #eeeeee; }
 
-.header .header-container nav a:first-child {
-  width: 15em;
-  padding: 0 1.5em 0 0; }
-
-.header .header-container nav a:first-child img {
-  width: 100%; }
-
-.header .header-container nav a:first-child:hover {
-  background: none;
-  border-right: 1px solid #eeeeee; }
-
-.header .header-container nav a:last-child {
+.header nav a:last-child {
   border-right: none; }
 
-.header .header-container nav a:hover {
+.header nav a:hover {
+  color: #17394a;
   background-color: #ff7c23;
   border-right: 1px solid #ff7c23; }
 
-.header .header-container nav a:hover span {
+.header nav a:hover i {
   color: white; }
 
-.header .header-container .header-container__profile {
+.header .header__profile {
   display: flex;
-  padding: 1.1em;
-  margin: 0 calc(3.4em - 1.1em) 0 auto;
+  padding: 1.25em;
+  margin-left: auto;
+  transition: all 0.3s;
+  background-color: #eeeeee;
   text-decoration: none; }
 
-.header .header-container .header-container__profile i {
+.header .header__profile i {
   font-size: 1.5em;
-  color: #17394a; }
-
-.header .header-container .header-container__profile:hover i {
   color: rgba(23, 57, 74, 0.62); }
+
+.header .header__profile:hover i {
+  color: #17394a; }
 
 main {
   display: block; }
 
 main .search {
-  padding: 1.5em 3.4em 1.3em 3.4em;
+  padding: 1.5em calc(1.5em * 2);
   margin: 0 auto;
   background-color: #17394a;
   color: white; }
@@ -123,12 +121,14 @@ main .search .search__container .search__container__form .form-control input {
   height: 2em;
   padding-left: 0.5em;
   font-size: 1em;
-  border: 1px solid rgba(23, 57, 74, 0.62);
+  border: none;
+  box-shadow: 0 0 10px #1e78ff;
   outline: none; }
 
 main .search .search__container .search__container__form .form-control button {
   width: 100%;
   height: 2.25em;
+  transition: all 0.3s;
   background-color: #0fbc20;
   color: white;
   font-size: 1em;
@@ -137,7 +137,8 @@ main .search .search__container .search__container__form .form-control button {
   outline: none; }
 
 main .search .search__container .search__container__form .form-control button:hover {
-  background-color: #0cf31f; }
+  color: #17394a;
+  background-color: rgba(15, 188, 32, 0.75); }
 
 main .search .search__container .search__container__form .form-control label {
   margin-top: 0.5em;
@@ -184,6 +185,9 @@ main .main .sidebar .subtype button {
   outline: none;
   cursor: pointer; }
 
+main .main .sidebar .subtype button:hover {
+  border-bottom: none; }
+
 main .main .sidebar .subtype-search {
   height: 15em;
   padding: 0 0.5rem;
@@ -192,7 +196,7 @@ main .main .sidebar .subtype-search {
   background-color: white; }
 
 main .main .sidebar .subtype-search .subtype-search__search {
-  width: 99%;
+  width: 98%;
   padding: 0.4em 0 0.4em 0.5em;
   margin-top: 0.7em;
   font-size: 0.8em;
@@ -220,7 +224,7 @@ main .main .main-content {
 main .main .main-content .search-tags {
   display: flex;
   align-items: center;
-  padding: 1.5em 3.4em 1.5em 1.5em;
+  padding: 1.5em 1.5em 1.5em 1.5em;
   border-bottom: 2px solid #eeeeee; }
 
 main .main .main-content .search-tags a {
@@ -233,6 +237,7 @@ main .main .main-content .search-tags button {
   height: 2em;
   padding: 0 1em;
   margin-right: 0.8em;
+  transition: all 0.3s;
   font-size: 1em;
   background-color: #ff7c23;
   color: #eeeeee;
@@ -253,16 +258,18 @@ main .main .main-content .search-tags button:first-child {
   border-bottom: 1px solid #17394a; }
 
 main .main .main-content .search-tags button:first-child:hover {
-  background: none; }
+  background: none;
+  border-bottom: none; }
 
 main .main .main-content .search-tags button:last-child {
   margin-right: 0; }
 
 main .main .main-content .search-tags button:hover {
+  color: #17394a;
   background-color: #ff9e33; }
 
 main .main .main-content .sorted-items {
-  padding: 1.5em 3.4em 0 1.5em; }
+  padding: 1.5em 1.5em 1.5em 1.5em; }
 
 main .main .main-content .sorted-items .sorted-items__sorted-by {
   display: flex;
