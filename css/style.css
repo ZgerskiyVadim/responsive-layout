@@ -384,8 +384,8 @@ main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__
 
 main .main .main-content .sorted-items .sorted-items__list .sorted-items__list__item .tags .tags__upgrade button {
   padding: 0.4em;
-  margin: 0 0.3em;
-  font-size: 1em;
+  margin-left: 0.3em;
+  font-size: 0.8em;
   background-color: #17394a;
   color: white;
   border: none;
