@@ -43,7 +43,7 @@
         color: $background-grey;
       }
       &:last-child {
-        border-right: none;
+        border-right: 1px solid white;
       }
       &:hover {
         color: $background-blue;
