@@ -30,7 +30,7 @@
       flex-direction: column;
       margin: 0.8em 0 0.8em 1.5em;
       color: $background-blue;
-      .content__info__sections {
+      .content__info__header {
         display: flex;
         align-items: center;
         a {
@@ -86,7 +86,7 @@
       flex-wrap: wrap;
       button {
         padding: 0.4em;
-        margin-left: 0.3em;
+        margin: 0.3em 0 0 0.3em;
         font-size: 0.8em;
         background-color: $background-blue;
         color: white;
@@ -108,7 +108,7 @@
     .tags {
       padding: 1em;
     }
-    .content .content__info .content__info__sections {
+    .content .content__info .content__info__header {
       flex-wrap: wrap;
       a {
         white-space: normal;
@@ -121,9 +121,34 @@
     .content {
       width: auto;
       flex-direction: column;
+      .content__info {
+        margin: 0.8em 0 0 0;
+        text-align: center;
+        .content__info__header {
+          display: block;
+          text-align: center;
+        }
+        h2 {
+          margin-top: 0.3em;
+        }
+        h4 {
+          margin-bottom: 0.3em;
+        }
+        footer {
+          display: block;
+          text-align: center;
+          div:first-child {
+            margin-right: 0;
+          }
+        }
+      }
     }
     .tags {
       width: auto;
+      text-align: center;
+      .tags__upgrade {
+        display: block;
+      }
     }
   }
 }

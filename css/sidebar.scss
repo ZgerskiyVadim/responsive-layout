@@ -28,6 +28,7 @@
     }
     button {
       padding: 0;
+      transition:all .3s;
       color: white;
       font-size: 0.9em;
       background: none;
@@ -36,7 +37,7 @@
       outline: none;
       cursor: pointer;
       &:hover {
-        border-bottom: none;
+        border-bottom: 1px solid $background-blue;
       }
     }
   }
@@ -79,6 +80,22 @@
     align-items: center;
     .sidebar__container {
       width: 50%;
+      .subtype-search{
+        .subtype-search__search {
+          padding: 0.5em 0 0.5em 0.5em;
+          font-size: 1em;
+        }
+        .subtype-search__list {
+          div {
+            .checkbox {
+              width: 1.5em;
+            }
+            label {
+              font-size: 1.2em;
+            }
+          }
+        }
+      }
     }
   }
   @include breakpointMaxWidth(600px) {

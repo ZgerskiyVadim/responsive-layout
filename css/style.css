@@ -108,7 +108,8 @@
   .header nav {
     position: absolute;
     top: 0;
-    width: 100%;
+    right: 0;
+    left: 0;
     height: 20em;
     max-height: 0;
     display: flex;
@@ -124,14 +125,14 @@
     display: flex !important; }
   .header nav a {
     width: 100%;
-    padding: 0 1em;
+    padding: 0;
     font-size: 1.3em;
     color: #17394a;
     border-right: none;
-    border-top: 2px solid #17394a; }
+    border-top: none; }
   .header nav a i {
     color: #17394a;
-    margin-right: 0.5em; }
+    margin: 0 0.5em 0 1em; }
   .header .header__profile {
     display: none; }
   .header .toggle-container {
@@ -141,7 +142,9 @@
     max-height: 20em;
     opacity: 1;
     z-index: 2;
-    background-color: #eee; } }
+    background-color: #eee; }
+  .header .show-toggle a {
+    border-top: 2px solid #17394a; } }
 
 .search {
   padding: calc(1.5em * 2);
@@ -156,7 +159,8 @@
 
 .search .search__container h6 {
   margin: 0.5em 0;
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  font-weight: 400; }
 
 .search .search__container h6 a {
   margin-left: 0.5em;
@@ -266,6 +270,7 @@
 
 .sidebar .subtype button {
   padding: 0;
+  transition: all .3s;
   color: white;
   font-size: 0.9em;
   background: none;
@@ -275,7 +280,7 @@
   cursor: pointer; }
 
 .sidebar .subtype button:hover {
-  border-bottom: none; }
+  border-bottom: 1px solid #17394a; }
 
 .sidebar .subtype-search {
   height: 15em;
@@ -313,7 +318,14 @@
     flex-direction: column;
     align-items: center; }
   .sidebar .sidebar__container {
-    width: 50%; } }
+    width: 50%; }
+  .sidebar .sidebar__container .subtype-search .subtype-search__search {
+    padding: 0.5em 0 0.5em 0.5em;
+    font-size: 1em; }
+  .sidebar .sidebar__container .subtype-search .subtype-search__list div .checkbox {
+    width: 1.5em; }
+  .sidebar .sidebar__container .subtype-search .subtype-search__list div label {
+    font-size: 1.2em; } }
 
 @media (max-width: 600px) {
   .sidebar {
@@ -360,7 +372,8 @@
 
 .search-tags button:first-child:hover {
   background: none;
-  border-bottom: none; }
+  border-bottom: none;
+  border-bottom: 1px solid white; }
 
 .search-tags button:last-child {
   margin-right: 0; }
@@ -374,9 +387,9 @@
     flex-wrap: wrap; }
   .search-tags button {
     padding: 0 0.5em;
-    margin-right: 0.4em; }
+    margin: 0.5em 0.4em 0 0; }
   .search-tags button:first-child {
-    margin: 0 100% 1em 0; } }
+    margin: 0 100% 0.5em 0; } }
 
 .sorted-items__list__item {
   display: flex;
@@ -410,16 +423,16 @@
   margin: 0.8em 0 0.8em 1.5em;
   color: #17394a; }
 
-.sorted-items__list__item .content .content__info .content__info__sections {
+.sorted-items__list__item .content .content__info .content__info__header {
   display: flex;
   align-items: center; }
 
-.sorted-items__list__item .content .content__info .content__info__sections a {
+.sorted-items__list__item .content .content__info .content__info__header a {
   font-size: 1em;
   white-space: nowrap;
   color: #17394a; }
 
-.sorted-items__list__item .content .content__info .content__info__sections i {
+.sorted-items__list__item .content .content__info .content__info__header i {
   font-size: 0.5em;
   margin: 0 1em; }
 
@@ -466,7 +479,7 @@
 
 .sorted-items__list__item .tags .tags__upgrade button {
   padding: 0.4em;
-  margin-left: 0.3em;
+  margin: 0.3em 0 0 0.3em;
   font-size: 0.8em;
   background-color: #17394a;
   color: white;
@@ -482,9 +495,9 @@
     padding: 1em; }
   .sorted-items__list__item .tags {
     padding: 1em; }
-  .sorted-items__list__item .content .content__info .content__info__sections {
+  .sorted-items__list__item .content .content__info .content__info__header {
     flex-wrap: wrap; }
-  .sorted-items__list__item .content .content__info .content__info__sections a {
+  .sorted-items__list__item .content .content__info .content__info__header a {
     white-space: normal;
     word-break: break-word; } }
 
@@ -494,8 +507,26 @@
   .sorted-items__list__item .content {
     width: auto;
     flex-direction: column; }
+  .sorted-items__list__item .content .content__info {
+    margin: 0.8em 0 0 0;
+    text-align: center; }
+  .sorted-items__list__item .content .content__info .content__info__header {
+    display: block;
+    text-align: center; }
+  .sorted-items__list__item .content .content__info h2 {
+    margin-top: 0.3em; }
+  .sorted-items__list__item .content .content__info h4 {
+    margin-bottom: 0.3em; }
+  .sorted-items__list__item .content .content__info footer {
+    display: block;
+    text-align: center; }
+  .sorted-items__list__item .content .content__info footer div:first-child {
+    margin-right: 0; }
   .sorted-items__list__item .tags {
-    width: auto; } }
+    width: auto;
+    text-align: center; }
+  .sorted-items__list__item .tags .tags__upgrade {
+    display: block; } }
 
 main {
   display: block;
@@ -504,23 +535,23 @@ main {
 main .main {
   display: flex; }
 
-main .main .main-content {
+main .main .main__content {
   width: 100%; }
 
-main .main .main-content .sorted-items {
+main .main .main__content .sorted-items {
   padding: 1.5em; }
 
-main .main .main-content .sorted-items .sorted-items__sorted-by {
+main .main .main__content .sorted-items .sorted-items__sorted-by {
   display: flex;
   justify-content: space-between; }
 
-main .main .main-content .sorted-items .sorted-items__sorted-by label {
+main .main .main__content .sorted-items .sorted-items__sorted-by label {
   font-size: 1.5em; }
 
-main .main .main-content .sorted-items .sorted-items__sorted-by div {
+main .main .main__content .sorted-items .sorted-items__sorted-by div {
   position: relative; }
 
-main .main .main-content .sorted-items .sorted-items__sorted-by div select {
+main .main .main__content .sorted-items .sorted-items__sorted-by div select {
   display: block;
   width: 9em;
   height: 2em;
@@ -532,7 +563,7 @@ main .main .main-content .sorted-items .sorted-items__sorted-by div select {
   cursor: pointer;
   outline: none; }
 
-main .main .main-content .sorted-items .sorted-items__sorted-by div:after {
+main .main .main__content .sorted-items .sorted-items__sorted-by div:after {
   content: '▼';
   position: absolute;
   right: 1px;
@@ -542,7 +573,7 @@ main .main .main-content .sorted-items .sorted-items__sorted-by div:after {
   background-color: #eeeeee;
   pointer-events: none; }
 
-main .main .main-content .sorted-items .sorted-items__list {
+main .main .main__content .sorted-items .sorted-items__list {
   display: flex;
   flex-direction: column;
   margin-top: 1.5em; }
