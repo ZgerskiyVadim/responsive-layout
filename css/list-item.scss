@@ -1,4 +1,5 @@
 @import "main.scss";
+@import "mixins.scss";
 
 .sorted-items__list__item {
   display: flex;
@@ -52,6 +53,7 @@
       }
       footer {
         display: flex;
+        flex-wrap: wrap;
         div {
           margin: 0.5em 0;
         }
@@ -81,6 +83,7 @@
       display: flex;
       flex-direction: row;
       align-items: baseline;
+      flex-wrap: wrap;
       button {
         padding: 0.4em;
         margin-left: 0.3em;
@@ -94,6 +97,33 @@
           background-color: $background-light_blue;
         }
       }
+    }
+  }
+}
+.sorted-items__list__item {
+  @include breakpointMaxWidth(1100px) {
+    .content {
+      padding: 1em;
+    }
+    .tags {
+      padding: 1em;
+    }
+    .content .content__info .content__info__sections {
+      flex-wrap: wrap;
+      a {
+        white-space: normal;
+        word-break: break-word;
+      }
+    }
+  }
+  @include breakpointMaxWidth(600px) {
+    flex-direction: column;
+    .content {
+      width: auto;
+      flex-direction: column;
+    }
+    .tags {
+      width: auto;
     }
   }
 }

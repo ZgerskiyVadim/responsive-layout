@@ -1,65 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 @import "main.scss";
 @import "header.scss";
 @import "search-section.scss";
 @import "sidebar.scss";
 @import "search-tags.scss";
 @import "list-item.scss";
+@import "main-section.scss";
 
 body {
   margin: 0;
-  font-family: $font;
-}
-.container {
-  max-width: $max-width;
-  margin: 0 auto;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
-main {
-  display: block;
-  .main {
-    display: flex;
-    .main-content {
-      width: 100%;
-      .sorted-items {
-        padding: 1.5em $padding-sections 1.5em 1.5em;
-        .sorted-items__sorted-by {
-          display: flex;
-          justify-content: space-between;
-          label {
-            font-size: 1.5em;
-          }
-          div {
-            position: relative;
-            select {
-              display: block;
-              width: 9em;
-              height: 2em;
-              padding-left: 0.5em;
-              font-size: 1em;
-              color: grey;
-              border: 1px solid $background-light_blue;
-              background-color: white;
-              cursor: pointer;
-              outline: none;
-            }
-          }
-          div:after {
-            content: '▼';
-            position: absolute;
-            right: 1px;
-            top: 1px;
-            height: 0.9em;
-            padding: 0.3em 0.5em 0.7em 0.5em;
-            background-color: $background-grey;
-            pointer-events: none;
-          }
-        }
-        .sorted-items__list {
-          display: flex;
-          flex-direction: column;
-          margin-top: 1.5em;
-        }
-      }
-    }
-  }
+.container {
+  position: relative;
+  max-width: $max-width;
+  margin: 0 auto;
 }

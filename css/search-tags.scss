@@ -1,4 +1,5 @@
 @import "main.scss";
+@import "mixins.scss";
 
 .search-tags {
   display: flex;
@@ -19,6 +20,7 @@
     font-size: 1em;
     background-color: $background-orange;
     color: $background-grey;
+    white-space: nowrap;
     border: none;
     cursor: pointer;
     outline: none;
@@ -44,6 +46,19 @@
     &:hover {
       color: $background-blue;
       background-color: $background-light_orange;
+    }
+  }
+}
+
+.search-tags {
+  @include breakpointMaxWidth(1100px) {
+    flex-wrap: wrap;
+    button {
+      padding: 0 0.5em;
+      margin-right: 0.4em;
+      &:first-child {
+        margin: 0 100% 1em 0;
+      }
     }
   }
 }

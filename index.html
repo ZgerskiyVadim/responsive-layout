@@ -10,11 +10,16 @@
 </head>
 <body>
 <div class="container">
+    <div class="container-cover"></div>
     <header class="header">
-        <a class="header__image" href="#">
+        <a class="header__logo" href="#">
             <img src="./assets/images/logo-best-site-1.png">
         </a>
-        <nav>
+        <nav class="header__toggle-menu">
+            <a class="hide" href="#">
+                <i class="material-icons">person</i>
+                <span>Profile</span>
+            </a>
             <a href="#">
                 <i class="fa fa-search"></i>
                 <span>Search</span>
@@ -43,6 +48,10 @@
         <a class="header__profile" href="#">
             <i class="material-icons">person</i>
         </a>
+        <div class="toggle-container">
+            <img class="nav-toggle" src="./assets/images/----------------------------1-------2.png" alt="">
+            <img class="nav-toggle hide" src="./assets/images/-------1------.png" alt="">
+        </div>
     </header>
 
     <main>
@@ -51,13 +60,11 @@
                 <h3>
                     Search by Manufacturer, Model, or Serial Number
                 </h3>
-                <div class="search__container__description">
-                    <h6>
-                        You`re search for models that have both
-                        <b>Values & Market Data</b> and <b>Specs</b>
-                    </h6>
+                <h6>
+                    You`re search for models that have both
+                    <b>Values & Market Data</b> and <b>Specs</b>
                     <a href="#">Edit search type</a>
-                </div>
+                </h6>
                 <form class="search__container__form">
                     <div class="form-control">
                         <input type="text" id="manufacturer">
@@ -401,5 +408,7 @@
         </section>
     </main>
 </div>
+
+<script src="js/index.js"></script>
 </body>
 </html>

@@ -1,10 +1,14 @@
 @import "main.scss";
+@import "mixins.scss";
 
 .header {
+  position: absolute;
+  width: 100%;
+  height: 4em;
   display: flex;
   align-items: center;
-  height: 4em;
-  .header__image {
+  z-index: 2;
+  .header__logo {
     width: 15em;
     height: 100%;
     display: flex;
@@ -19,8 +23,9 @@
   nav {
     display: flex;
     align-items: center;
+    height: 4em;
     a {
-      height: 5em;
+      height: 100%;
       display: flex;
       align-items: center;
       padding: 0 1.5em;
@@ -51,8 +56,10 @@
     }
   }
   .header__profile {
+    height: 100%;
     display: flex;
-    padding: 1.25em;
+    align-items: center;
+    padding: 0 2em;
     margin-left: auto;
     transition: opacity 0.3s;
     background-color: $background-grey;
@@ -70,8 +77,91 @@
   }
 }
 
+.toggle-container {
+  display: none;
+  align-items: center;
+  width: 4em;
+  height: 100%;
+  margin-left: auto;
+  background-color: #eeeeee;
+  cursor: pointer;
+}
+
+.nav-toggle {
+  padding: 1.2em;
+  margin: 0 auto;
+}
+
+.hide {
+  display: none !important;
+}
+
 .header {
-  @include breakpoint($sm-width, $md-width) {
-    position: absolute;
+  @include breakpoint(790px, $md-width) {
+    nav {
+      a {
+        padding: 0 1em;
+      }
+    }
+    .header__profile {
+      padding: 0 1em;
+    }
+  }
+  @include breakpointMaxWidth($md-width) {
+    .header__logo {
+      width: 8em;
+      border-right: none;
+      img {
+        width: 8em;
+      }
+    }
+  }
+  @include breakpointMaxWidth(835px) {
+    background-color: white;
+    nav {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 20em;
+      max-height: 0;
+      display: flex;
+      align-items: flex-start;
+      padding: 1em;
+      margin-top: 4em;
+      flex-direction: column;
+      transition: all .3s;
+      opacity: 0;
+      z-index: -1;
+      background: white;
+      .hide {
+        display: flex !important;
+      }
+      a {
+        width: 100%;
+        padding: 0 1em;
+        font-size: 1.3em;
+        color: $background-blue;
+        border-right: none;
+        border-top: 2px solid $background-blue;
+        i {
+          color: $background-blue;
+          margin-right: 0.5em;
+        }
+      }
+    }
+    .header__profile {
+      display: none;
+    }
+    .toggle-container {
+      display: flex;
+    }
+
+    .show-toggle {
+      height: 20em;
+      max-height: 20em;
+      opacity: 1;
+      z-index: 2;
+      background-color: #eee;
+    }
   }
 }
