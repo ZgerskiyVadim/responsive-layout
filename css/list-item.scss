@@ -17,7 +17,7 @@
       display: flex;
       align-items: center;
       width: 100%;
-      height: 100%;
+      max-height: 13em;
       margin: 0;
       border: 1px solid lightgrey;
       img {
@@ -105,6 +105,9 @@
   @include breakpointMaxWidth(1100px) {
     .content {
       padding: 1em;
+      .content__image {
+        max-height: 18em;
+      }
     }
     .tags {
       padding: 1em;
@@ -113,11 +116,10 @@
       flex-wrap: wrap;
       a {
         white-space: normal;
-        word-break: break-word;
       }
     }
   }
-  @include breakpointMaxWidth(600px) {
+  @include breakpointMaxWidth($sm-width) {
     flex-direction: column;
     .content {
       width: auto;
@@ -130,7 +132,7 @@
           text-align: center;
         }
         h2 {
-          margin-top: 0.3em;
+          margin-top: 2em;
         }
         h4 {
           margin-bottom: 0.3em;

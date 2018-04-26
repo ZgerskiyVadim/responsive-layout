@@ -74,7 +74,7 @@
 }
 
 .sidebar {
-  @include breakpointMaxWidth(835px) {
+  @include breakpointMaxWidth($md-width) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -98,7 +98,7 @@
       }
     }
   }
-  @include breakpointMaxWidth(600px) {
+  @include breakpointMaxWidth($sm-width) {
     padding: 1em;
     .sidebar__container {
       width: 80%;

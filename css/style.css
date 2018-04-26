@@ -95,14 +95,14 @@
   .header .header__profile {
     padding: 0 1em; } }
 
-@media (max-width: 945px) {
+@media screen and (max-width: 945px) {
   .header .header__logo {
     width: 8em;
     border-right: none; }
   .header .header__logo img {
     width: 8em; } }
 
-@media (max-width: 835px) {
+@media screen and (max-width: 835px) {
   .header {
     background-color: white; }
   .header nav {
@@ -114,7 +114,7 @@
     max-height: 0;
     display: flex;
     align-items: flex-start;
-    padding: 1em;
+    padding: 0 1em 1em 1em;
     margin-top: 4em;
     flex-direction: column;
     transition: all .3s;
@@ -126,7 +126,7 @@
   .header nav a {
     width: 100%;
     padding: 0;
-    font-size: 1.3em;
+    font-size: 1.2em;
     color: #17394a;
     border-right: none;
     border-top: none; }
@@ -210,13 +210,13 @@
   font-size: 1em;
   white-space: nowrap; }
 
-@media (max-width: 945px) {
+@media screen and (max-width: 835px) {
   .search .search__container h3 {
     text-align: center;
     font-size: 1.5em; }
   .search .search__container h6 {
     text-align: center;
-    font-size: 1.2em; }
+    font-size: 0.9em; }
   .search .search__container .search__container__form {
     flex-direction: column;
     align-items: center; }
@@ -233,7 +233,7 @@
   .search .search__container .search__container__form .form-control label {
     margin: 0 0 0.5em 0; } }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .search {
     padding: 2em; }
   .search .search__container .search__container__form .form-control {
@@ -312,7 +312,7 @@
   margin: 0 0.5em 0 0;
   border: 1px solid rgba(23, 57, 74, 0.62); }
 
-@media (max-width: 835px) {
+@media screen and (max-width: 835px) {
   .sidebar {
     display: flex;
     flex-direction: column;
@@ -327,15 +327,13 @@
   .sidebar .sidebar__container .subtype-search .subtype-search__list div label {
     font-size: 1.2em; } }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .sidebar {
     padding: 1em; }
   .sidebar .sidebar__container {
     width: 80%; } }
 
 .search-tags {
-  display: flex;
-  align-items: center;
   padding: 1.5em 1.5em 1.5em 1.5em;
   border-bottom: 2px solid #eeeeee; }
 
@@ -382,9 +380,7 @@
   color: #17394a;
   background-color: #ff9e33; }
 
-@media (max-width: 1100px) {
-  .search-tags {
-    display: block; }
+@media screen and (max-width: 1100px) {
   .search-tags button {
     padding: 0 0.5em;
     margin: 0.5em 0.4em 0 0; }
@@ -409,7 +405,7 @@
   display: flex;
   align-items: center;
   width: 100%;
-  height: 100%;
+  max-height: 13em;
   margin: 0;
   border: 1px solid lightgrey; }
 
@@ -491,18 +487,19 @@
 .sorted-items__list__item .tags .tags__upgrade button:hover {
   background-color: rgba(23, 57, 74, 0.62); }
 
-@media (max-width: 1100px) {
+@media screen and (max-width: 1100px) {
   .sorted-items__list__item .content {
     padding: 1em; }
+  .sorted-items__list__item .content .content__image {
+    max-height: 18em; }
   .sorted-items__list__item .tags {
     padding: 1em; }
   .sorted-items__list__item .content .content__info .content__info__header {
     flex-wrap: wrap; }
   .sorted-items__list__item .content .content__info .content__info__header a {
-    white-space: normal;
-    word-break: break-word; } }
+    white-space: normal; } }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .sorted-items__list__item {
     flex-direction: column; }
   .sorted-items__list__item .content {
@@ -515,7 +512,7 @@
     display: block;
     text-align: center; }
   .sorted-items__list__item .content .content__info h2 {
-    margin-top: 0.3em; }
+    margin-top: 2em; }
   .sorted-items__list__item .content .content__info h4 {
     margin-bottom: 0.3em; }
   .sorted-items__list__item .content .content__info footer {
@@ -579,7 +576,7 @@ main .main .main__content .sorted-items .sorted-items__list {
   flex-direction: column;
   margin-top: 1.5em; }
 
-@media (max-width: 835px) {
+@media screen and (max-width: 835px) {
   .main {
     flex-direction: column; }
   .cover-bg {
@@ -597,5 +594,5 @@ body {
 
 .container {
   position: relative;
-  max-width: 1174px;
+  max-width: 1175px;
   margin: 0 auto; }

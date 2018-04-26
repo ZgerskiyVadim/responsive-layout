@@ -52,7 +52,7 @@ main {
   }
 }
 
-@include breakpointMaxWidth(835px) {
+@include breakpointMaxWidth($md-width) {
   .main {
     flex-direction: column;
   }

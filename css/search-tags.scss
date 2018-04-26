@@ -2,8 +2,6 @@
 @import "mixins.scss";
 
 .search-tags {
-  display: flex;
-  align-items: center;
   padding: 1.5em $padding-sections 1.5em 1.5em;
   border-bottom: 2px solid $background-grey;
   a {
@@ -53,7 +51,6 @@
 
 .search-tags {
   @include breakpointMaxWidth(1100px) {
-    display: block;
     button {
       padding: 0 0.5em;
       margin: 0.5em 0.4em 0 0;
