@@ -15,7 +15,7 @@
       background-color: $grey;
 
       a {
-        border-top: 2px solid $blue;
+        border-top: 2px solid $dark-grey;
       }
     }
   }
@@ -54,7 +54,6 @@
       visibility: hidden;
       display: flex;
       align-items: flex-start;
-      padding: 0 1em 1em;
       margin-top: 4em;
       flex-direction: column;
       transition: visibility 0.3s, height 0.3s, opacity 0.3s;
@@ -86,12 +85,11 @@
         padding: 0 1em;
       }
       @include breakpointMaxWidth($md-width) {
-        width: 100%;
+        width: 99%;
         padding: 0;
-        font-size: 1.2em;
+        font-size: 1em;
         color: $blue;
         border-right: none;
-        border-top: none;
       }
 
       i {

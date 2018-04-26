@@ -17,7 +17,7 @@
     opacity: 1;
     background-color: #eee; }
   .main-header .show-toggle a {
-    border-top: 2px solid #17394a; } }
+    border-top: 2px solid lightgray; } }
 
 .main-header .main-header__logo {
   width: 15em;
@@ -55,7 +55,6 @@
     visibility: hidden;
     display: flex;
     align-items: flex-start;
-    padding: 0 1em 1em;
     margin-top: 4em;
     flex-direction: column;
     transition: visibility 0.3s, height 0.3s, opacity 0.3s;
@@ -89,12 +88,11 @@
 
 @media screen and (max-width: 835px) {
   .main-header nav a {
-    width: 100%;
+    width: 99%;
     padding: 0;
-    font-size: 1.2em;
+    font-size: 1em;
     color: #17394a;
-    border-right: none;
-    border-top: none; } }
+    border-right: none; } }
 
 .main-header nav a i {
   transition: color 0.3s;
