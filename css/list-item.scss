@@ -6,166 +6,186 @@
   @include breakpointMaxWidth(1160px) {
     flex-direction: column;
   }
+
   &:first-child {
     margin-top: 0;
   }
-  .content {
-    width: 80%;
+}
+
+.content {
+  width: 80%;
+  display: flex;
+  padding: 1.5em;
+  @include breakpointMaxWidth(1160px) {
+    width: auto;
+  }
+  @include breakpointMaxWidth($sm-width) {
+    width: auto;
+    flex-direction: column;
+  }
+
+  .content__image {
     display: flex;
-    padding: 1.5em;
+    align-items: center;
+    width: 50%;
+    max-height: 13em;
+    margin: 0;
+    border: 1px solid $dark-grey;
     @include breakpointMaxWidth(1160px) {
-      width: auto;
+      width: 20em;
+      height: 20em;
     }
     @include breakpointMaxWidth($sm-width) {
-      width: auto;
-      flex-direction: column;
+      width: 100%;
+      max-height: 100%;
+      min-height: 18em;
     }
-    .content__image {
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      flex: 1;
+    }
+  }
+
+  .content__info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0.8em 0 0.8em 1.5em;
+    color: $blue;
+    @include breakpointMaxWidth($sm-width) {
+      margin: 0.8em 0 0;
+      text-align: center;
+    }
+
+    .content__info__header {
       display: flex;
       align-items: center;
-      width: 50%;
-      max-height: 13em;
-      margin: 0;
-      border: 1px solid $dark-grey;
-      @include breakpointMaxWidth(1160px) {
-        width: 20em;
-        height: 20em;
+      @include breakpointMaxWidth(1100px) {
+        flex-wrap: wrap;
       }
       @include breakpointMaxWidth($sm-width) {
-        width: 100%;
-        max-height: 100%;
-        min-height: 18em;
-      }
-      img {
-        max-width: 100%;
-        max-height: 100%;
-        flex: 1;
-      }
-    }
-    .content__info {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      margin: 0.8em 0 0.8em 1.5em;
-      color: $blue;
-      @include breakpointMaxWidth($sm-width) {
-        margin: 0.8em 0 0;
+        display: block;
         text-align: center;
       }
-      .content__info__header {
-        display: flex;
-        align-items: center;
+
+      a {
+        font-size: 1em;
+        white-space: nowrap;
+        color: $blue;
         @include breakpointMaxWidth(1100px) {
-          flex-wrap: wrap;
-        }
-        @include breakpointMaxWidth($sm-width) {
-          display: block;
-          text-align: center;
-        }
-        a {
-          font-size: 1em;
-          white-space: nowrap;
-          color: $blue;
-          @include breakpointMaxWidth(1100px) {
-            white-space: normal;
-          }
-        }
-        i {
-          font-size: 0.5em;
-          margin: 0 1em;
+          white-space: normal;
         }
       }
-      h2 {
-        font-size: 1.5em;
-        margin: 0.7em 0 0;
-        @include breakpointMaxWidth($sm-width) {
-          margin-top: 2em;
-        }
+
+      i {
+        font-size: 0.5em;
+        margin: 0 1em;
       }
-      h4 {
-        font-size: 1.5em;
-        margin: 0.2em 0 0.8em;
-        @include breakpointMaxWidth($sm-width) {
-          margin-bottom: 0.3em;
-        }
+    }
+
+    h2 {
+      font-size: 1.5em;
+      margin: 0.7em 0 0;
+      @include breakpointMaxWidth($sm-width) {
+        margin-top: 2em;
       }
-      footer {
-        display: flex;
-        flex-wrap: wrap;
+    }
+
+    h4 {
+      font-size: 1.5em;
+      margin: 0.2em 0 0.8em;
+      @include breakpointMaxWidth($sm-width) {
+        margin-bottom: 0.3em;
+      }
+    }
+
+    footer {
+      display: flex;
+      flex-wrap: wrap;
+      @include breakpointMaxWidth($sm-width) {
+        display: block;
+        text-align: center;
+      }
+
+      div {
+        margin: 0.5em 0;
+      }
+
+      div:first-child {
+        margin-right: 15%;
         @include breakpointMaxWidth($sm-width) {
-          display: block;
-          text-align: center;
-        }
-        div {
-          margin: 0.5em 0;
-        }
-        div:first-child {
-          margin-right: 15%;
-          @include breakpointMaxWidth($sm-width) {
-            margin-right: 0;
-          }
+          margin-right: 0;
         }
       }
     }
   }
-  .tags {
-    width: 20%;
-    padding: 1.5em 1em;
-    background-color: $grey;
-    border-left: 1px solid $dark-grey;
-    @include breakpointMaxWidth(1160px) {
-      width: auto;
-      display: flex;
-      align-items: baseline;
-      flex-wrap: wrap;
+}
+
+.tags {
+  width: 20%;
+  padding: 1.5em 1em;
+  background-color: $grey;
+  border-left: 1px solid $dark-grey;
+  @include breakpointMaxWidth(1160px) {
+    width: auto;
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+  @include breakpointMaxWidth(1100px) {
+    padding: 1em;
+  }
+  @include breakpointMaxWidth($sm-width) {
+    display: block;
+    width: auto;
+    text-align: center;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    @include breakpoint($sm-width, 1160px) {
+      flex-direction: row;
+      margin: 0 0.5em 0 0;
     }
-    @include breakpointMaxWidth(1100px) {
-      padding: 1em;
+
+    &:first-child {
+      margin-top: 0;
     }
+
+    a {
+      color: $blue;
+      @include breakpoint($sm-width, 1160px) {
+        margin-right: 0.5em;
+      }
+    }
+  }
+
+  .tags__upgrade {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    flex-wrap: wrap;
     @include breakpointMaxWidth($sm-width) {
       display: block;
-      width: auto;
-      text-align: center;
     }
-    div {
-      display: flex;
-      flex-direction: column;
-      margin-top: 1em;
-      @include breakpoint($sm-width, 1160px) {
-        flex-direction: row;
-        margin: 0 0.5em 0 0;
-      }
-      &:first-child {
-        margin-top: 0;
-      }
-      a {
-        color: $blue;
-        @include breakpoint($sm-width, 1160px) {
-          margin-right: 0.5em;
-        }
-      }
-    }
-    .tags__upgrade {
-      display: flex;
-      flex-direction: row;
-      align-items: baseline;
-      flex-wrap: wrap;
-      @include breakpointMaxWidth($sm-width) {
-        display: block;
-      }
-      button {
-        padding: 0.4em;
-        margin: 0.3em 0 0 0.3em;
-        font-size: 0.8em;
-        background-color: $blue;
-        transition: background-color 0.3s;
-        color: $white;
-        border: none;
-        cursor: pointer;
-        outline: none;
-        &:hover {
-          background-color: $light-blue;
-        }
+
+    button {
+      padding: 0.4em;
+      margin: 0.3em 0 0 0.3em;
+      font-size: 0.8em;
+      background-color: $blue;
+      transition: background-color 0.3s;
+      color: $white;
+      border: none;
+      cursor: pointer;
+      outline: none;
+
+      &:hover {
+        background-color: $light-blue;
       }
     }
   }

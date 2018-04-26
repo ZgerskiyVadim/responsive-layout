@@ -1,53 +1,62 @@
 main {
   display: block;
   padding-top: 4em;
-  .main {
-    display: flex;
-    @include breakpointMaxWidth($md-width) {
-      flex-direction: column;
-    }
-    .main__content {
-      width: 100%;
-      .sorted-items {
-        padding: 1.5em;
-        .sorted-items__sorted-by {
-          display: flex;
-          justify-content: space-between;
-          label {
-            font-size: 1.5em;
-          }
-          div {
-            position: relative;
-            select {
-              display: block;
-              width: 9em;
-              height: 2em;
-              padding-left: 0.5em;
-              font-size: 1em;
-              color: grey;
-              border: 1px solid $light-blue;
-              background-color: $white;
-              cursor: pointer;
-              outline: none;
-            }
-          }
-          div:after {
-            content: '▼';
-            position: absolute;
-            right: 1px;
-            top: 1px;
-            height: 0.88em;
-            padding: 0.3em 0.5em 0.7em 0.5em;
-            background-color: $grey;
-            pointer-events: none;
-          }
-        }
-        .sorted-items__list {
-          display: flex;
-          flex-direction: column;
-          margin-top: 1.5em;
-        }
+}
+
+.main {
+  display: flex;
+  @include breakpointMaxWidth($md-width) {
+    flex-direction: column;
+  }
+
+  .main__content {
+    width: 100%;
+  }
+
+  .sorted-items {
+    padding: 1.5em;
+
+    .sorted-items__sorted-by {
+      display: flex;
+      justify-content: space-between;
+
+      label {
+        font-size: 1.5em;
       }
+
+      div {
+        position: relative;
+      }
+
+      div::after {
+        content: '▼';
+        position: absolute;
+        right: 1px;
+        top: 1px;
+        height: 0.88em;
+        padding: 0.3em 0.5em 0.7em;
+        background-color: $grey;
+        pointer-events: none;
+      }
+
+      select {
+        display: block;
+        width: 9em;
+        height: 2em;
+        padding-left: 0.5em;
+        font-size: 1em;
+        color: $dark-grey;
+        border: 1px solid $light-blue;
+        background-color: $white;
+        cursor: pointer;
+        outline: none;
+      }
+    }
+
+    .sorted-items__list {
+      display: flex;
+      flex-direction: column;
+      margin-top: 1.5em;
     }
   }
 }

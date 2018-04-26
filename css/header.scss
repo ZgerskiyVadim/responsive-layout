@@ -7,16 +7,19 @@
   z-index: 222;
   @include breakpointMaxWidth($md-width) {
     background-color: $white;
+
     .show-toggle {
       visibility: visible;
       height: 20em;
       opacity: 1;
       background-color: $grey;
+
       a {
         border-top: 2px solid $blue;
       }
     }
   }
+
   .main-header__logo {
     width: 15em;
     height: 100%;
@@ -29,6 +32,7 @@
       width: 8em;
       border-right: none;
     }
+
     img {
       width: 100%;
       @include breakpointMaxWidth($lg-width) {
@@ -36,6 +40,7 @@
       }
     }
   }
+
   nav {
     display: flex;
     align-items: center;
@@ -56,12 +61,14 @@
       opacity: 0;
       background-color: $white;
     }
+
     .hide {
       display: none;
       @include breakpointMaxWidth($md-width) {
         display: flex;
       }
     }
+
     a {
       height: 100%;
       display: flex;
@@ -86,6 +93,7 @@
         border-right: none;
         border-top: none;
       }
+
       i {
         transition: color 0.3s;
         margin-right: 0.2rem;
@@ -96,19 +104,23 @@
           margin: 0 0.5em 0 1em;
         }
       }
+
       &:last-child {
         border-right: 1px solid $white;
       }
+
       &:hover {
         color: $blue;
         background-color: $orange;
         border-right: 1px solid $orange;
+
         i {
           color: $white;
         }
       }
     }
   }
+
   .main-header__profile {
     height: 100%;
     display: flex;
@@ -123,12 +135,14 @@
     @include breakpointMaxWidth($md-width) {
       display: none;
     }
+
     i {
       transition: opacity 0.3s;
       opacity: 0.6;
       font-size: 1.5em;
       color: $light_blue;
     }
+
     &:hover {
       i {
         opacity: 1;

@@ -2,10 +2,9 @@
   "extends": "stylelint-config-sass-guidelines",
   "rules": {
     "order/properties-alphabetical-order": null,
-    "rule-empty-line-before": null,
     "selector-class-pattern": null,
     "declaration-property-value-blacklist": [],
-    "max-nesting-depth": [],
+    "max-nesting-depth": [3],
     "selector-max-compound-selectors": []
   }
 }
