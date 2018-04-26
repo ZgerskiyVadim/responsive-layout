@@ -40,7 +40,7 @@
       &:hover {
         background: none;
         border-bottom: none;
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid $white;
       }
     }
     &:last-child {
@@ -48,7 +48,7 @@
     }
     &:hover {
       color: $blue;
-      background-color: $light_orange;
+      background-color: $light-orange;
     }
   }
 }

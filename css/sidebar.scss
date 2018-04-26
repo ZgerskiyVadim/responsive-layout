@@ -35,16 +35,16 @@
     h6 {
       margin: 0;
       font-size: 0.9em;
-      color: white;
+      color: $white;
     }
     button {
       padding: 0;
       transition: border 0.3s;
-      color: white;
+      color: $white;
       font-size: 0.9em;
       background: none;
       border: none;
-      border-bottom: 1px solid white;
+      border-bottom: 1px solid $white;
       outline: none;
       cursor: pointer;
       &:hover {
@@ -57,13 +57,13 @@
     padding: 0 0.5rem;
     overflow-y: scroll;
     overflow-x: hidden;
-    background-color: white;
+    background-color: $white;
     .subtype-search__search {
       width: 98%;
       padding: 0.4em 0 0.4em 0.5em;
       margin-top: 0.7em;
       font-size: 0.8em;
-      border: 1px solid  $light_blue;
+      border: 1px solid  $light-blue;
       outline: none;
       @include breakpointMaxWidth($md-width) {
         padding: 0.5em 0 0.5em 0.5em;
@@ -81,7 +81,7 @@
         .checkbox {
           width: 0.8em;
           margin: 0 0.5em 0 0;
-          border: 1px solid $light_blue;
+          border: 1px solid $light-blue;
           @include breakpointMaxWidth($md-width) {
             width: 1.5em;
           }

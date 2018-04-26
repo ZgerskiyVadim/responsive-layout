@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
-@import "main.scss";
-@import "mixins.scss";
-@import "header.scss";
-@import "search-section.scss";
-@import "sidebar.scss";
-@import "search-tags.scss";
-@import "list-item.scss";
-@import "main-section.scss";
+@import 'main';
+@import 'mixins';
+@import 'header';
+@import 'search-section';
+@import 'sidebar';
+@import 'search-tags';
+@import 'list-item';
+@import 'main-section';
 
 body {
   margin: 0;
