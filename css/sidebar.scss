@@ -1,6 +1,14 @@
 .sidebar {
   padding: 1.5em;
   background-color: $grey;
+  @include breakpointMaxWidth($md-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @include breakpointMaxWidth($sm-width) {
+    padding: 1em;
+  }
   h5 {
     margin: 0;
     font-size: 1.5em;
@@ -11,6 +19,12 @@
     width: 13em;
     margin-top: 1em;
     border: 1px solid $blue;
+    @include breakpointMaxWidth($md-width) {
+      width: 50%;
+    }
+    @include breakpointMaxWidth($sm-width) {
+      width: 80%;
+    }
   }
   .subtype {
     display: flex;
@@ -25,7 +39,7 @@
     }
     button {
       padding: 0;
-      transition: border .3s;
+      transition: border 0.3s;
       color: white;
       font-size: 0.9em;
       background: none;
@@ -51,6 +65,10 @@
       font-size: 0.8em;
       border: 1px solid  $light_blue;
       outline: none;
+      @include breakpointMaxWidth($md-width) {
+        padding: 0.5em 0 0.5em 0.5em;
+        font-size: 1em;
+      }
     }
     .subtype-search__list {
       display: flex;
@@ -64,41 +82,16 @@
           width: 0.8em;
           margin: 0 0.5em 0 0;
           border: 1px solid $light_blue;
+          @include breakpointMaxWidth($md-width) {
+            width: 1.5em;
+          }
         }
-      }
-    }
-  }
-}
-
-.sidebar {
-  @include breakpointMaxWidth($md-width) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    .sidebar__container {
-      width: 50%;
-      .subtype-search{
-        .subtype-search__search {
-          padding: 0.5em 0 0.5em 0.5em;
-          font-size: 1em;
-        }
-        .subtype-search__list {
-          div {
-            .checkbox {
-              width: 1.5em;
-            }
-            label {
-              font-size: 1.2em;
-            }
+        label {
+          @include breakpointMaxWidth($md-width) {
+            font-size: 1.2em;
           }
         }
       }
-    }
-  }
-  @include breakpointMaxWidth($sm-width) {
-    padding: 1em;
-    .sidebar__container {
-      width: 80%;
     }
   }
 }

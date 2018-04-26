@@ -3,6 +3,9 @@ main {
   padding-top: 4em;
   .main {
     display: flex;
+    @include breakpointMaxWidth($md-width) {
+      flex-direction: column;
+    }
     .main__content {
       width: 100%;
       .sorted-items {
@@ -50,9 +53,6 @@ main {
 }
 
 @include breakpointMaxWidth($md-width) {
-  .main {
-    flex-direction: column;
-  }
   .cover-bg {
     position: fixed;
     top: 0;
@@ -60,6 +60,6 @@ main {
     width: 100%;
     height: 100%;
     background: #dfdfdf;
-    opacity: .5;
+    opacity: 0.5;
   }
 }

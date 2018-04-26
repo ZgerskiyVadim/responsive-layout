@@ -5,6 +5,18 @@
   display: flex;
   align-items: center;
   z-index: 2;
+  @include breakpointMaxWidth($md-width) {
+    background-color: white;
+    .show-toggle {
+      visibility: visible;
+      height: 20em;
+      opacity: 1;
+      background-color: $grey;
+      a {
+        border-top: 2px solid $blue;
+      }
+    }
+  }
   .main-header__logo {
     width: 15em;
     height: 100%;
@@ -13,20 +25,49 @@
     padding: 0 1.5em 0 $padding-sections;
     background-color: white;
     border-right: 1px solid $grey;
+    @include breakpointMaxWidth($lg-width) {
+      width: 8em;
+      border-right: none;
+    }
     img {
       width: 100%;
+      @include breakpointMaxWidth($lg-width) {
+        width: 8em;
+      }
     }
   }
   nav {
     display: flex;
     align-items: center;
     height: 4em;
+    @include breakpointMaxWidth($md-width) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      height: 0;
+      visibility: hidden;
+      display: flex;
+      align-items: flex-start;
+      padding: 0 1em 1em 1em;
+      margin-top: 4em;
+      flex-direction: column;
+      transition: visibility 0.3s, height 0.3s, opacity 0.3s;
+      opacity: 0;
+      background-color: white;
+    }
+    .hide {
+      display: none;
+      @include breakpointMaxWidth($md-width) {
+        display: flex;
+      }
+    }
     a {
       height: 100%;
       display: flex;
       align-items: center;
       padding: 0 1.5em;
-      transition: color .3s, background-color .3s, border .3s;
+      transition: color 0.3s, background-color 0.3s, border 0.3s;
       font-size: 0.8em;
       border-right: 1px solid $grey;
       font-weight: 700;
@@ -34,11 +75,26 @@
       white-space: nowrap;
       cursor: pointer;
       text-decoration: none;
+      @include breakpoint(790px, $lg-width) {
+        padding: 0 1em;
+      }
+      @include breakpointMaxWidth($md-width) {
+        width: 100%;
+        padding: 0;
+        font-size: 1.2em;
+        color: $blue;
+        border-right: none;
+        border-top: none;
+      }
       i {
-        transition: color .3s;
+        transition: color 0.3s;
         margin-right: 0.2rem;
         font-size: 1.5em;
         color: $grey;
+        @include breakpointMaxWidth($md-width) {
+          color: $blue;
+          margin: 0 0.5em 0 1em;
+        }
       }
       &:last-child {
         border-right: 1px solid white;
@@ -61,6 +117,12 @@
     margin-left: auto;
     background-color: $grey;
     text-decoration: none;
+    @include breakpoint(790px, $lg-width) {
+      padding: 0 1em;
+    }
+    @include breakpointMaxWidth($md-width) {
+      display: none;
+    }
     i {
       transition: opacity .3s;
       opacity: 0.6;
@@ -83,6 +145,9 @@
   margin-left: auto;
   background-color: $grey;
   cursor: pointer;
+  @include breakpointMaxWidth($md-width) {
+    display: flex;
+  }
 }
 
 .nav-toggle {
@@ -92,80 +157,4 @@
 
 .hide {
   display: none;
-}
-
-.main-header nav .hide {
-  display: none;
-}
-
-.main-header {
-  @include breakpoint(790px, $lg-width) {
-    nav {
-      a {
-        padding: 0 1em;
-      }
-    }
-    .main-header__profile {
-      padding: 0 1em;
-    }
-  }
-  @include breakpointMaxWidth($lg-width) {
-    .main-header__logo {
-      width: 8em;
-      border-right: none;
-      img {
-        width: 8em;
-      }
-    }
-  }
-  @include breakpointMaxWidth($md-width) {
-    background-color: white;
-    nav {
-      position: absolute;
-      top: 0;
-      right: 0;
-      left: 0;
-      height: 0;
-      visibility: hidden;
-      display: flex;
-      align-items: flex-start;
-      padding: 0 1em 1em 1em;
-      margin-top: 4em;
-      flex-direction: column;
-      transition: visibility.3s, height .3s, opacity .3s;
-      opacity: 0;
-      background-color: white;
-      .hide {
-        display: flex;
-      }
-      a {
-        width: 100%;
-        padding: 0;
-        font-size: 1.2em;
-        color: $blue;
-        border-right: none;
-        border-top: none;
-        i {
-          color: $blue;
-          margin: 0 0.5em 0 1em;
-        }
-      }
-    }
-    .main-header__profile {
-      display: none;
-    }
-    .toggle-container {
-      display: flex;
-    }
-
-    .show-toggle {
-      visibility: visible;
-      height: 20em;
-      opacity: 1;
-      background-color: $grey;
-      a {
-        border-top: 2px solid $blue;
-      }
-    }
-  }
 }

@@ -3,6 +3,9 @@
   margin-top: 1.1em;
   font-size: 1em;
   border: 1px solid lightgrey;
+  @include breakpointMaxWidth($sm-width) {
+    flex-direction: column;
+  }
   &:first-child {
     margin-top: 0;
   }
@@ -10,6 +13,10 @@
     width: 80%;
     display: flex;
     padding: 1.5em;
+    @include breakpointMaxWidth($sm-width) {
+      width: auto;
+      flex-direction: column;
+    }
     .content__image {
       display: flex;
       align-items: center;
@@ -17,6 +24,15 @@
       max-height: 13em;
       margin: 0;
       border: 1px solid lightgrey;
+      @include breakpointMaxWidth(1100px) {
+        min-width: 12em;
+        max-height: 18em;
+      }
+      @include breakpointMaxWidth($sm-width) {
+        width: 100%;
+        max-height: 100%;
+        min-height: 18em;
+      }
       img {
         max-width: 100%;
         max-height: 100%;
@@ -29,13 +45,27 @@
       flex-direction: column;
       margin: 0.8em 0 0.8em 1.5em;
       color: $blue;
+      @include breakpointMaxWidth($sm-width) {
+        margin: 0.8em 0 0 0;
+        text-align: center;
+      }
       .content__info__header {
         display: flex;
         align-items: center;
+        @include breakpointMaxWidth(1100px) {
+          flex-wrap: wrap;
+        }
+        @include breakpointMaxWidth($sm-width) {
+          display: block;
+          text-align: center;
+        }
         a {
           font-size: 1em;
           white-space: nowrap;
           color: $blue;
+          @include breakpointMaxWidth(1100px) {
+            white-space: normal;
+          }
         }
         i {
           font-size: 0.5em;
@@ -45,19 +75,32 @@
       h2 {
         font-size: 1.5em;
         margin: 0.7em 0 0;
+        @include breakpointMaxWidth($sm-width) {
+          margin-top: 2em;
+        }
       }
       h4 {
         font-size: 1.5em;
         margin: 0.2em 0 0.8em;
+        @include breakpointMaxWidth($sm-width) {
+          margin-bottom: 0.3em;
+        }
       }
       footer {
         display: flex;
         flex-wrap: wrap;
+        @include breakpointMaxWidth($sm-width) {
+          display: block;
+          text-align: center;
+        }
         div {
           margin: 0.5em 0;
         }
         div:first-child {
           margin-right: 15%;
+          @include breakpointMaxWidth($sm-width) {
+            margin-right: 0;
+          }
         }
       }
     }
@@ -67,6 +110,13 @@
     padding: 1.5em 1em;
     background-color: $grey;
     border-left: 1px solid lightgrey;
+    @include breakpointMaxWidth(1100px) {
+      padding: 1em;
+    }
+    @include breakpointMaxWidth($sm-width) {
+      width: auto;
+      text-align: center;
+    }
     div {
       display: flex;
       flex-direction: column;
@@ -83,12 +133,15 @@
       flex-direction: row;
       align-items: baseline;
       flex-wrap: wrap;
+      @include breakpointMaxWidth($sm-width) {
+        display: block;
+      }
       button {
         padding: 0.4em;
         margin: 0.3em 0 0 0.3em;
         font-size: 0.8em;
         background-color: $blue;
-        transition: background-color .3s;
+        transition: background-color 0.3s;
         color: white;
         border: none;
         cursor: pointer;
@@ -96,66 +149,6 @@
         &:hover {
           background-color: $light_blue;
         }
-      }
-    }
-  }
-}
-.sorted-items__list__item {
-  @include breakpointMaxWidth(1100px) {
-    .content {
-      padding: 1em;
-      .content__image {
-        min-width: 12em;
-        max-height: 18em;
-      }
-    }
-    .tags {
-      padding: 1em;
-    }
-    .content .content__info .content__info__header {
-      flex-wrap: wrap;
-      a {
-        white-space: normal;
-      }
-    }
-  }
-  @include breakpointMaxWidth($sm-width) {
-    flex-direction: column;
-    .content {
-      width: auto;
-      flex-direction: column;
-      .content__image {
-        width: 100%;
-        max-height: 100%;
-        min-height: 18em;
-      }
-      .content__info {
-        margin: 0.8em 0 0 0;
-        text-align: center;
-        .content__info__header {
-          display: block;
-          text-align: center;
-        }
-        h2 {
-          margin-top: 2em;
-        }
-        h4 {
-          margin-bottom: 0.3em;
-        }
-        footer {
-          display: block;
-          text-align: center;
-          div:first-child {
-            margin-right: 0;
-          }
-        }
-      }
-    }
-    .tags {
-      width: auto;
-      text-align: center;
-      .tags__upgrade {
-        display: block;
       }
     }
   }
