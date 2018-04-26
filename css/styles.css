@@ -406,7 +406,7 @@
 .sorted-items__list__item .content .content__image {
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 50%;
   max-height: 13em;
   margin: 0;
   border: 1px solid lightgrey; }
@@ -511,6 +511,7 @@
     width: auto;
     flex-direction: column; }
   .sorted-items__list__item .content .content__image {
+    width: 100%;
     max-height: 100%;
     min-height: 18em; }
   .sorted-items__list__item .content .content__info {
