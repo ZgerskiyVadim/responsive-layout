@@ -1,13 +1,18 @@
+//Screen sizes
 $lg-width: 945px;
 $md-width: 835px;
 $sm-width: 600px;
 
+//Max with of main container
 $max-width: 1175px;
 
-$background-grey: #eeeeee;
-$background-blue: #17394a;
-$background-light_blue: rgba(23, 57, 74, 0.62);
-$background-orange: #ff7c23;
-$background-light_orange: rgba(255, 158, 51, 1);
-$background-green: rgb(15, 188, 32);
+//Colors
+$grey: #eeeeee;
+$blue: #17394a;
+$light_blue: rgba(23, 57, 74, 0.62);
+$orange: #ff7c23;
+$light_orange: rgba(255, 158, 51, 1);
+$green: rgb(15, 188, 32);
+
+//Right and left padding of inner sections
 $padding-sections: 1.5em;

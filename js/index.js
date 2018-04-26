@@ -1,5 +1,5 @@
 window.addEventListener('load', function () {
-    const toggleMenu = document.querySelector('.header__toggle-menu');
+    const toggleMenu = document.querySelector('.main-header__toggle-menu');
     const showToggle = document.querySelectorAll('.nav-toggle')[0];
     const hideToggle = document.querySelectorAll('.nav-toggle')[1];
     const containerCover = document.querySelector('.container-cover');
