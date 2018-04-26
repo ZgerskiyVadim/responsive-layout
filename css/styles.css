@@ -10,7 +10,7 @@
 
 @media screen and (max-width: 835px) {
   .main-header {
-    background-color: #ffff; }
+    background-color: #fff; }
   .main-header .show-toggle {
     visibility: visible;
     height: 20em;
@@ -25,7 +25,7 @@
   display: flex;
   align-items: center;
   padding: 0 1.5em 0 1.5em;
-  background-color: #ffff;
+  background-color: #fff;
   border-right: 1px solid #eee; }
 
 @media screen and (max-width: 945px) {
@@ -60,7 +60,7 @@
     flex-direction: column;
     transition: visibility 0.3s, height 0.3s, opacity 0.3s;
     opacity: 0;
-    background-color: #ffff; } }
+    background-color: #fff; } }
 
 .main-header nav .hide {
   display: none; }
@@ -108,7 +108,7 @@
     margin: 0 0.5em 0 1em; } }
 
 .main-header nav a:last-child {
-  border-right: 1px solid #ffff; }
+  border-right: 1px solid #fff; }
 
 .main-header nav a:hover {
   color: #17394a;
@@ -116,7 +116,7 @@
   border-right: 1px solid #ff7c23; }
 
 .main-header nav a:hover i {
-  color: #ffff; }
+  color: #fff; }
 
 .main-header .main-header__profile {
   height: 100%;
@@ -168,7 +168,7 @@
   padding: calc(1.5em * 2);
   margin: 0 auto;
   background-color: #17394a;
-  color: #ffff; }
+  color: #fff; }
 
 @media screen and (max-width: 600px) {
   .search {
@@ -196,7 +196,7 @@
 
 .search .search__container h6 a {
   margin-left: 0.5em;
-  color: #ffff; }
+  color: #fff; }
 
 .search .search__container .search__container__form {
   display: flex;
@@ -254,7 +254,7 @@
   opacity: 1;
   background-color: #0fbc20;
   transition: color 0.3s, opacity 0.3s;
-  color: #ffff;
+  color: #fff;
   font-size: 1em;
   border: none;
   cursor: pointer;
@@ -320,16 +320,16 @@
 .sidebar .subtype h6 {
   margin: 0;
   font-size: 0.9em;
-  color: #ffff; }
+  color: #fff; }
 
 .sidebar .subtype button {
   padding: 0;
   transition: border 0.3s;
-  color: #ffff;
+  color: #fff;
   font-size: 0.9em;
   background: none;
   border: none;
-  border-bottom: 1px solid #ffff;
+  border-bottom: 1px solid #fff;
   outline: none;
   cursor: pointer; }
 
@@ -341,7 +341,7 @@
   padding: 0 0.5rem;
   overflow-y: scroll;
   overflow-x: hidden;
-  background-color: #ffff; }
+  background-color: #fff; }
 
 .sidebar .subtype-search .subtype-search__search {
   width: 98%;
@@ -426,7 +426,7 @@
 .search-tags button:first-child:hover {
   background: none;
   border-bottom: none;
-  border-bottom: 1px solid #ffff; }
+  border-bottom: 1px solid #fff; }
 
 .search-tags button:last-child {
   margin-right: 0; }
@@ -618,7 +618,7 @@
   font-size: 0.8em;
   background-color: #17394a;
   transition: background-color 0.3s;
-  color: #ffff;
+  color: #fff;
   border: none;
   cursor: pointer;
   outline: none; }
@@ -661,7 +661,7 @@ main .main .main__content .sorted-items .sorted-items__sorted-by div select {
   font-size: 1em;
   color: grey;
   border: 1px solid rgba(23, 57, 74, 0.62);
-  background-color: #ffff;
+  background-color: #fff;
   cursor: pointer;
   outline: none; }
 
