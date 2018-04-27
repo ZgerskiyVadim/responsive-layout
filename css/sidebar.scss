@@ -64,10 +64,7 @@
   }
 
   .subtype-search {
-    height: 15em;
     padding: 0 0.5rem;
-    overflow-y: scroll;
-    overflow-x: hidden;
     background-color: $white;
 
     .subtype-search__search {
@@ -85,12 +82,13 @@
     }
 
     .subtype-search__list {
+      height: 12em;
       display: flex;
       flex-direction: column;
+      overflow-y: scroll;
+      overflow-x: hidden;
 
       div {
-        display: flex;
-        align-items: center;
         margin-top: 0.8em;
         font-size: 1em;
       }
