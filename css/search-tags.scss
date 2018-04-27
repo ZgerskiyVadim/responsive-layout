@@ -21,6 +21,7 @@
     border: none;
     cursor: pointer;
     outline: none;
+
     @include breakpointMaxWidth(1100px) {
       padding: 0 0.5em;
       margin: 0.5em 0.4em 0 0;
@@ -38,6 +39,7 @@
       background: none;
       border: none;
       border-bottom: 1px solid $blue;
+
       @include breakpointMaxWidth(1100px) {
         margin: 0 80% 0.5em 0;
       }

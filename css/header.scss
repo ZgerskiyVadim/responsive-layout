@@ -5,6 +5,7 @@
   display: flex;
   align-items: center;
   z-index: 222;
+
   @include breakpointMaxWidth($md-width) {
     background-color: $white;
 
@@ -28,6 +29,7 @@
     padding: 0 1.5em 0 $padding-sections;
     background-color: $white;
     border-right: 1px solid $grey;
+
     @include breakpointMaxWidth($lg-width) {
       width: 8em;
       border-right: none;
@@ -45,6 +47,7 @@
     display: flex;
     align-items: center;
     height: 4em;
+
     @include breakpointMaxWidth($md-width) {
       position: absolute;
       top: 0;
@@ -63,6 +66,7 @@
 
     .hide {
       display: none;
+
       @include breakpointMaxWidth($md-width) {
         display: flex;
       }
@@ -81,9 +85,11 @@
       white-space: nowrap;
       cursor: pointer;
       text-decoration: none;
+
       @include breakpoint(790px, $lg-width) {
         padding: 0 1em;
       }
+
       @include breakpointMaxWidth($md-width) {
         width: 99%;
         padding: 0;
@@ -97,6 +103,7 @@
         margin-right: 0.2rem;
         font-size: 1.5em;
         color: $grey;
+
         @include breakpointMaxWidth($md-width) {
           color: $blue;
           margin: 0 0.5em 0 1em;
@@ -127,9 +134,11 @@
     margin-left: auto;
     background-color: $grey;
     text-decoration: none;
+
     @include breakpoint(790px, $lg-width) {
       padding: 0 1em;
     }
+
     @include breakpointMaxWidth($md-width) {
       display: none;
     }
@@ -157,6 +166,7 @@
   margin-left: auto;
   background-color: $grey;
   cursor: pointer;
+
   @include breakpointMaxWidth($md-width) {
     display: flex;
   }

@@ -5,6 +5,7 @@ main {
 
 .main {
   display: flex;
+
   @include breakpointMaxWidth($md-width) {
     flex-direction: column;
   }

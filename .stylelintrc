@@ -4,7 +4,7 @@
     "order/properties-alphabetical-order": null,
     "selector-class-pattern": null,
     "declaration-property-value-blacklist": [],
-    "max-nesting-depth": [3],
+    "max-nesting-depth": [4],
     "selector-max-compound-selectors": []
   }
 }
