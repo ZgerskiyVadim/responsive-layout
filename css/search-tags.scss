@@ -1,24 +1,24 @@
 .search-tags {
-  padding: 1.5em $padding-sections 1.5em 1.5em;
+  padding: 1.5em $paddingSections 1.5em 1.5em;
   border-bottom: 2px solid $grey;
 
   a {
     margin-right: 1em;
-    color: $blue;
     font-size: 1em;
+    color: $blue;
     cursor: pointer;
   }
 
   button {
     height: 2em;
     padding: 0 1em;
+    border: none;
     margin-right: 0.8em;
     transition: color 0.3s, background-color 0.3s, border 0.3s;
     font-size: 1em;
+    white-space: nowrap;
     background-color: $orange;
     color: $grey;
-    white-space: nowrap;
-    border: none;
     cursor: pointer;
     outline: none;
 
@@ -35,19 +35,19 @@
     &:first-child {
       height: auto;
       padding: 0;
-      color: $blue;
-      background: none;
       border: none;
       border-bottom: 1px solid $blue;
+      color: $blue;
+      background: none;
 
       @include breakpointMaxWidth(1100px) {
         margin: 0 80% 0.5em 0;
       }
 
       &:hover {
-        background: none;
         border-bottom: none;
         border-bottom: 1px solid $white;
+        background: none;
       }
     }
 
@@ -57,7 +57,7 @@
 
     &:hover {
       color: $blue;
-      background-color: $light-orange;
+      background-color: $lightOrange;
     }
   }
 }

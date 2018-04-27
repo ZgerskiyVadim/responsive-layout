@@ -21,8 +21,8 @@
 
   .sidebar__container {
     width: 13em;
-    margin-top: 1em;
     border: 1px solid $blue;
+    margin-top: 1em;
 
     @include breakpointMaxWidth($md-width) {
       width: 50%;
@@ -48,12 +48,12 @@
 
     button {
       padding: 0;
-      transition: border 0.3s;
-      color: $white;
-      font-size: 0.9em;
-      background: none;
       border: none;
       border-bottom: 1px solid $white;
+      transition: border 0.3s;
+      font-size: 0.9em;
+      color: $white;
+      background: none;
       outline: none;
       cursor: pointer;
 
@@ -70,9 +70,9 @@
     .subtype-search__search {
       width: 98%;
       padding: 0.4em 0 0.4em 0.5em;
+      border: 1px solid  $lightBlue;
       margin-top: 0.7em;
       font-size: 0.8em;
-      border: 1px solid  $light-blue;
       outline: none;
 
       @include breakpointMaxWidth($md-width) {
@@ -82,9 +82,9 @@
     }
 
     .subtype-search__list {
-      height: 12em;
       display: flex;
       flex-direction: column;
+      height: 12em;
       overflow-y: scroll;
       overflow-x: hidden;
 
@@ -95,8 +95,8 @@
 
       .checkbox {
         width: 0.8em;
+        border: 1px solid $lightBlue;
         margin: 0 0.5em 0 0;
-        border: 1px solid $light-blue;
 
         @include breakpointMaxWidth($md-width) {
           width: 1.5em;

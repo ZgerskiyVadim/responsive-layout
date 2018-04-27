@@ -1,5 +1,5 @@
 .search {
-  padding: calc(#{$padding-sections} * 2);
+  padding: calc(#{$paddingSections} * 2);
   margin: 0 auto;
   background-color: $blue;
   color: $white;
@@ -16,8 +16,8 @@
     font-weight: 400;
 
     @include breakpointMaxWidth($md-width) {
-      text-align: center;
       font-size: 1.5em;
+      text-align: center;
     }
   }
 
@@ -27,8 +27,8 @@
     font-weight: 400;
 
     @include breakpointMaxWidth($md-width) {
-      text-align: center;
       font-size: 0.9em;
+      text-align: center;
     }
 
     a {
@@ -53,8 +53,8 @@
       margin-right: 1.7em;
 
       @include breakpointMaxWidth($md-width) {
-        width: 70%;
         flex-direction: column-reverse;
+        width: 70%;
         margin: 0 0 1em;
       }
 
@@ -79,9 +79,9 @@
         width: 97%;
         height: 2em;
         padding-left: 0.5em;
-        font-size: 1em;
         border: none;
-        box-shadow: 0 0 10px $bright-blue;
+        font-size: 1em;
+        box-shadow: 0 0 10px $brightBlue;
         outline: none;
 
         @include breakpointMaxWidth($md-width) {
@@ -92,12 +92,12 @@
       button {
         width: 100%;
         height: 2.25em;
-        opacity: 1;
-        background-color: $green;
-        transition: color 0.3s, opacity 0.3s;
-        color: $white;
-        font-size: 1em;
         border: none;
+        transition: color 0.3s, opacity 0.3s;
+        opacity: 1;
+        font-size: 1em;
+        background-color: $green;
+        color: $white;
         cursor: pointer;
         outline: none;
 
@@ -106,8 +106,8 @@
         }
 
         &:hover {
-          color: $blue;
           opacity: 0.7;
+          color: $blue;
         }
       }
 

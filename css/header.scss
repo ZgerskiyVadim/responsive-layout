@@ -1,34 +1,34 @@
 .main-header {
   position: absolute;
-  width: 100%;
-  height: 4em;
+  z-index: 222;
   display: flex;
   align-items: center;
-  z-index: 222;
+  width: 100%;
+  height: 4em;
 
   @include breakpointMaxWidth($md-width) {
     background-color: $white;
 
     .show-toggle {
-      visibility: visible;
       height: 20em;
+      visibility: visible;
       opacity: 1;
       background-color: $grey;
 
       a {
-        border-top: 2px solid $dark-grey;
+        border-top: 2px solid $darkGrey;
       }
     }
   }
 
   .main-header__logo {
-    width: 15em;
-    height: 100%;
     display: flex;
     align-items: center;
-    padding: 0 1.5em 0 $padding-sections;
-    background-color: $white;
+    width: 15em;
+    height: 100%;
+    padding: 0 1.5em 0 $paddingSections;
     border-right: 1px solid $grey;
+    background-color: $white;
 
     @include breakpointMaxWidth($lg-width) {
       width: 8em;
@@ -56,9 +56,9 @@
       height: 0;
       visibility: hidden;
       display: flex;
+      flex-direction: column;
       align-items: flex-start;
       margin-top: 4em;
-      flex-direction: column;
       transition: visibility 0.3s, height 0.3s, opacity 0.3s;
       opacity: 0;
       background-color: $white;
@@ -73,16 +73,16 @@
     }
 
     a {
-      height: 100%;
       display: flex;
       align-items: center;
+      height: 100%;
       padding: 0 1.5em;
       transition: color 0.3s, background-color 0.3s, border 0.3s;
-      font-size: 0.8em;
       border-right: 1px solid $grey;
-      font-weight: 700;
-      color: $light_blue;
+      color: $lightBlue;
       white-space: nowrap;
+      font-size: 0.8em;
+      font-weight: 700;
       cursor: pointer;
       text-decoration: none;
 
@@ -93,9 +93,9 @@
       @include breakpointMaxWidth($md-width) {
         width: 99%;
         padding: 0;
+        border-right: none;
         font-size: 1em;
         color: $blue;
-        border-right: none;
       }
 
       i {
@@ -105,8 +105,8 @@
         color: $grey;
 
         @include breakpointMaxWidth($md-width) {
-          color: $blue;
           margin: 0 0.5em 0 1em;
+          color: $blue;
         }
       }
 
@@ -115,9 +115,9 @@
       }
 
       &:hover {
+        border-right: 1px solid $orange;
         color: $blue;
         background-color: $orange;
-        border-right: 1px solid $orange;
 
         i {
           color: $white;
@@ -127,9 +127,9 @@
   }
 
   .main-header__profile {
-    height: 100%;
     display: flex;
     align-items: center;
+    height: 100%;
     padding: 0 2em;
     margin-left: auto;
     background-color: $grey;
@@ -147,7 +147,7 @@
       transition: opacity 0.3s;
       opacity: 0.6;
       font-size: 1.5em;
-      color: $light_blue;
+      color: $lightBlue;
     }
 
     &:hover {

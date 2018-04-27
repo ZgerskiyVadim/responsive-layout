@@ -5,6 +5,7 @@
     "selector-class-pattern": null,
     "declaration-property-value-blacklist": [],
     "max-nesting-depth": [4],
-    "selector-max-compound-selectors": []
+    "selector-max-compound-selectors": [],
+    "scss/dollar-variable-pattern": false
   }
 }
